@@ -1,0 +1,129 @@
+/* vv use  selector or :root selector? vv */
+* {
+  margin: 0;
+  padding: 0;
+  --background1: #42668c;
+  --background2: #6ecadf;
+  --brown1: #523425;
+  --yellow1: #fff200;
+  --white1: #ffffff;
+  --black1: #000000;
+  --green-light: #5cde72;
+  --green-dark: #268416;
+  --blue-light: #25b6e2;
+  --blue-dark: rgb(12, 12, 158);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100dvh;
+}
+
+header {
+  background-color: var(--background1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--white1);
+}
+
+.logo {
+  padding: 30px;
+  /* border-radius: 50%; */
+  /* ^^ why border-radius not working? */
+}
+
+.heading {
+  padding-bottom: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--background2);
+  padding: 12px;
+}
+
+nav a {
+  /* margin: 8px; */
+  /* padding: 8px; */
+  text-decoration: none;
+  color: var(--brown1);
+}
+
+nav a:hover {
+  font-weight: bold;
+  filter: drop-shadow(var(--green-dark) 5px 5px 5px);
+  /* text-decoration: underline; */
+}
+
+main {
+  background-color: var(--background1);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  color: var(--white1);
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+main p {
+  padding: 32px;
+}
+
+.project-snapshot {
+    background-color: var(--background2);
+    padding: 24px;
+    margin: 12px;
+    border-radius: 10%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.project-snapshot a {
+    text-decoration: none;
+    color: var(--brown1);
+}
+
+.project-snapshot a h3 {
+    padding-bottom: 24px;
+    
+
+}
+
+footer {
+  background-color: var(--background1);
+  color: var(--white1);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  gap: 24px;
+}
+
+.social-media a i {
+  color: var(--white1);
+  font-size: 32px;
+}
+
+.social-media a i:hover {
+  /* filter: drop-shadow(5px 5px); */
+  filter: drop-shadow(var(--yellow1) 5px 5px 5px);
+}
+
+@media screen and (min-width: 600px) {
+  /* ^^ do i need the "only" keyword? */
+  header {
+  }
+}
