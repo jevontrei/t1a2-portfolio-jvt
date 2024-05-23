@@ -66,6 +66,7 @@ main {
   padding: 32px;
   display: flex;
   flex-direction: column;
+  /* ^^ change this row (mobile first?) and adjust in media quiery */
   color: var(--white1);
   /* justify-content: space-between; */
   /* align-items: center; */
@@ -76,31 +77,28 @@ main p {
 }
 
 .projects {
-    
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .project-snapshot {
-    background-color: var(--background2);
-    padding: 24px;
-    margin: 12px;
-    border-radius: 10%;
+  background-color: var(--background2);
+  padding: 24px;
+  margin: 12px;
+  border-radius: 10%;
 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .project-snapshot a {
-    text-decoration: none;
-    color: var(--brown1);
+  text-decoration: none;
+  color: var(--brown1);
 }
 
 .project-snapshot a h3 {
-    padding-bottom: 24px;
-    
-
+  padding-bottom: 24px;
 }
 
 footer {
@@ -130,10 +128,11 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
+  /* ^^ should be max-width? how to do mobile-first? */
   /* ^^ do i need the "only" keyword? */
   /* i used 576px bc of bootstrap breakpoints */
   main {
     /* display: flex; */
+    /* flex-wrap: wrap; */
   }
-
 }

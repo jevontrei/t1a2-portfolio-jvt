@@ -1,32 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joel von Treifeldt</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css" />
     <!-- ^^ do i need both stylesheets? vv -->
-    <!-- <link rel="stylesheet" href="./styles/about.css"> -->
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/about.css" />
+    <link rel="icon" href="https://coderacademy.edu.au/images/footerLogo.png" />
+    <!-- ^^ update favicon!! -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Joel von Treifeldt</h1>
-
+      <div class="logo">
+        <a href="#">
+          <img
+            src="../images/tree.avif"
+            alt="Tree against blue sky; landscape"
+            style="width: 300px"
+          />
+        </a>
+      </div>
+      <h1 class="heading">Joel von Treifeldt</h1>
     </header>
     <nav>
-        <a href="../index.html">Home</a>
-        <a href="#">About</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./blog.html">Blog</a>
-        <a href="./contact.html">Contact</a>
-
-
+      <a href="../index.html">Home</a>
+      <a href="#">About</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html">Contact</a>
     </nav>
     <main>
-        <h2>Work/study history / resume link</h2>
+      <section class="about">
+        <h2>About Me</h2>
+        <!-- put about in the right-hand side column but above Employment? -->
+        <br />
+        <h3>In terms of things that nourish me, here is my story:</h3>
+        <p>
+          First, I was a hobby musician and music teacher. Then I was a
+          scientist (physics and materials science). Next I became a
+          professional musician, performing and returning to teaching. Most
+          recently I have pursued the software world.
+        </p>
+        <p>
+          I'm interested in many topics: music, science, software, technology,
+          AI, philosophy, psychology, languages meditation. You could say I
+          secretly want to be a cognitive scientist.
+        </p>
+      </section>
+      <section class="experiences-both">
+        <section class="experience">
+          <h2>Academia</h2>
+          <section class="experience-item">
+            <h3 class="item-date">2024 - present</h3>
+            <div class="item-details">
+              <p>Diploma of Information Technology</p>
+              <p>Full Stack Web Development</p>
+              <p>Coder Academy</p>
+            </div>
+          </section>
+          <section class="experience-item">
+            <h3 class="item-date">2020 - 2021</h3>
+            <div class="item-details">
+              <p>
+                Graduate Certificate in Research Studies (Materials Science)
+              </p>
+              <p>Inorganic Nanomaterials Laboratory</p>
+              <p>Queensland University of Technology</p>
+            </div>
+          </section>
+          <section class="experience-item">
+            <h3 class="item-date">2021</h3>
+            <div class="item-details">
+              <p>First-Author Publication</p>
+              <p>Journal: Materials & Design</p>
+              <!-- ^^ change this line in resume file too -->
+              <a
+                href="https://doi.org/10.1016/j.matdes.2020.109403"
+                target="_blank"
+                >https://doi.org/10.1016/j.matdes.2020.109403
+              </a>
+            </div>
+          </section>
+          <section class="experience-item">
+            <h3 class="item-date">2014 - 2019</h3>
+            <div class="item-details">
+              <p>Bachelor of Science (Physics) (First Class Honours)</p>
+              <p>Minors: Mechanical Engineering and Discrete Mathematics</p>
+              <p>Queensland University of Technology</p>
+            </div>
+          </section>
+        </section>
+        <section class="experience">
+          <h2>Employment</h2>
+          <section class="experience-item">
+            <h3 class="item-date">2023 - present</h3>
+            <div class="item-details">
+              <p>Bus Operator</p>
+              <p>Brisbane City Council</p>
+            </div>
+          </section>
+          <section class="experience-item">
+            <h3 class="item-date">2021 - present</h3>
+            <div class="item-details">
+              <p>Music Educator and Performer</p>
+              <p>JVT Music</p>
+            </div>
+          </section>
+          <section class="experience-item">
+            <h3 class="item-date">2021</h3>
+            <div class="item-details">
+              <p>Sessional Academic (Laboratory Demonstrator)</p>
+              <p>Queensland University of Technology</p>
+            </div>
+          </section>
+        </section>
+      </section>
+      <section class="resume">
+        <a href="../JVT_Resume.pdf" target="_blank">
+          See my full resume
+          <!-- See Beau's website -->
+          <!-- add resume/cv favicon or symbol -->
+          <!-- make resume much more detailed, including months -->
+        </a>
+      </section>
     </main>
     <footer>
-
+      <div class="social-media">
+        <a
+          href="https://www.linkedin.com/in/joel-von-treifeldt/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/jevontrei" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <p>Joel von Treifeldt &copy; 2024</p>
     </footer>
-</body>
+  </body>
 </html>

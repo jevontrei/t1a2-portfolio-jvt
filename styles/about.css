@@ -1,0 +1,75 @@
+main {
+  display: flex;
+  /* ^^ unnecessary? already did it in style.css? */
+  justify-content: space-around;
+}
+
+.about {
+
+}
+
+.experiences-both {
+  display: flex;
+  /* min-width: 100%; */
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  background-color: var(--green-light);
+  padding: 32px;
+  border-radius: 32px;
+  width: 50%;
+}
+
+.experience-item {
+  display: flex;
+  background-color: var(--background1);
+  border-radius: 32px;
+  margin: 24px;
+}
+
+.item-date {
+  background-color: var(--white1);
+  color: var(--brown1);
+  min-width: 200px;
+  max-width: 200px;
+  max-height: 24px;
+  border-radius: 8px;
+  /* display: flex;
+    justify-content: center; */
+}
+
+.item-details {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: start; */
+  /* gap: 0px; */
+  /* padding: 0; */
+  /* margin: 0; */
+}
+
+.resume {
+  font-size: 24px;
+  background-color: var(--white1);
+  border-radius: 5%;
+  max-width: 240px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 576px) {
+  /* ^^ should be max-width? how to do mobile-first? */
+  main {
+    /* display: flex;
+    align-items: center; */
+  }
+
+  .experience-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
