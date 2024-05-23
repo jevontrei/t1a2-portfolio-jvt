@@ -75,6 +75,13 @@ main p {
   padding: 32px;
 }
 
+.projects {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .project-snapshot {
     background-color: var(--background2);
     padding: 24px;
@@ -122,8 +129,11 @@ footer {
   filter: drop-shadow(var(--yellow1) 5px 5px 5px);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   /* ^^ do i need the "only" keyword? */
-  header {
+  /* i used 576px bc of bootstrap breakpoints */
+  main {
+    /* display: flex; */
   }
+
 }
