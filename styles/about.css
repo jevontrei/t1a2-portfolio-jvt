@@ -1,33 +1,62 @@
 main {
   display: flex;
-  /* ^^ unnecessary? already did it in style.css? */
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
+  background-color: var(--background1);
 }
 
 .about {
-
+  color: var(--white1);
+  margin: 24px 24px 12px;
 }
 
 .experiences-both {
   display: flex;
-  /* min-width: 100%; */
+  /* flex-direction: column; */
+  /* ^^ unnecessary now that resume is inside right hand column? */
+  flex-direction: row;
+  /* ^^ redundant? delet */
+  flex-wrap: wrap;
+  /* width: 100%; */
+}
+
+/* .left-column {
+} */
+/* merge or split left and right columns? vv */
+
+.column {
+  display: flex;
+  flex-direction: column;
+  /* background-color: var(--background2); */
+  margin: 12px 24px;
+  /* padding: 24px; */
+  /* border-radius: 0px 48px; */
+  width: 576px;
+  align-items: center;
+  /* height: fit-content; */
 }
 
 .experience {
   display: flex;
   flex-direction: column;
-  margin: 16px;
-  background-color: var(--green-light);
-  padding: 32px;
-  border-radius: 32px;
-  width: 50%;
+  background-color: var(--background2);
+  margin: 12px 24px;
+  padding: 24px;
+  border-radius: 0px 48px;
+  width: 90%;
+  height: fit-content;
+  box-shadow: 0px 0px 8px 8px var(--background2);
+
 }
 
-.experience-item {
-  display: flex;
-  background-color: var(--background1);
-  border-radius: 32px;
-  margin: 24px;
+#employment {
+  /* height: auto; */
+}
+
+.experience h2 {
+  color: var(--brown1);
+  margin-bottom: 24px;
 }
 
 .item-date {
@@ -36,40 +65,122 @@ main {
   min-width: 200px;
   max-width: 200px;
   max-height: 24px;
-  border-radius: 8px;
-  /* display: flex;
-    justify-content: center; */
+  border-radius: 16px 16px 0px 0px;
+  display: flex;
+  justify-content: center;
+  padding: 4px;
 }
 
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: var(--background1); */
+  margin-bottom: 24px;
+  /* width: 100%; */
+}
+
+/* ^^ merge / delete one of these? vv */
+
 .item-details {
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   /* justify-content: start; */
+  align-items: center;
   /* gap: 0px; */
-  /* padding: 0; */
+  /* padding: 0px; */
   /* margin: 0; */
+  color: var(--white1);
+  background-color: var(--background1);
+  border-radius: 0px 48px 0px;
+  width: 100%;
+  
+}
+
+.item-details p {
+  margin: 8px;
+}
+
+.item-details a {
+  color: var(--white1);
+  margin: 8px;
 }
 
 .resume {
   font-size: 24px;
-  background-color: var(--white1);
-  border-radius: 5%;
-  max-width: 240px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--green-light);
+  border-radius: 0px 48px 0px;
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 0px 0px 8px 8px var(--green-light);
+  /* height: 50px; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
+  padding: 24px;
+  margin: 60px;
 }
 
-@media screen and (min-width: 576px) {
-  /* ^^ should be max-width? how to do mobile-first? */
+#resume-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  color: var(--brown1);
+  /* text-decoration: none; */
+}
+
+#resume-link:hover {
+  filter: drop-shadow(var(--yellow1) 5px 5px 5px);
+  /* box-shadow: inset 0px 0px 40px 40px #DBA632; */
+  /* filter: blur(5px) */
+  text-decoration: none;
+}
+
+.resume:hover {
+  box-shadow: 0px 0px 0px 0px var(--green-light);
+}
+
+
+/* @keyframes {
+
+} */
+
+
+/* @media screen and (min-width: 576px) { */
   main {
-    /* display: flex;
-    align-items: center; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+  }
+
+  .experiences-both {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+  }
+
+  .column {
+
+  }
+
+  .experience {
+    /* width: 50%; */
+  }
+
+  /* #employment {
+    width: 100%;
+  } */
+
+  .employment-and-resume {
+    /* width: 50%; */
   }
 
   .experience-item {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
   }
+
 }

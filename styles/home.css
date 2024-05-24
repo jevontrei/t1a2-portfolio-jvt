@@ -1,0 +1,47 @@
+
+main {
+    background-color: var(--background1);
+    padding: 32px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* ^^ change this row (mobile first?) and adjust in media quiery */
+    color: var(--white1);
+    /* justify-content: space-between; */
+    /* align-items: center; */
+  }
+  
+  main p {
+    padding: 32px;
+  }
+  
+  .projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .project-snapshot {
+    background-color: var(--background2);
+    padding: 24px;
+    margin: 12px;
+    border-radius: 10%;
+    /* ^^ use px instead? */
+    box-shadow: 0px 0px 8px 8px var(--background2);
+
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-snapshot a {
+    text-decoration: none;
+    color: var(--brown1);
+  }
+  
+  .project-snapshot a h3 {
+    padding-bottom: 24px;
+  }
+  
+  .snapshot-image {
+    border-radius: 16px;
+  }
+  

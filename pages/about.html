@@ -20,12 +20,13 @@
   <body>
     <header>
       <div class="logo">
-        <a href="#">
+        <a href="../index.html">
           <img
             src="../images/tree.avif"
             alt="Tree against blue sky; landscape"
             style="width: 300px"
           />
+          <!-- ^^ don't need style bc css? -->
         </a>
       </div>
       <h1 class="heading">Joel von Treifeldt</h1>
@@ -43,12 +44,14 @@
         <!-- put about in the right-hand side column but above Employment? -->
         <br />
         <h3>In terms of things that nourish me, here is my story:</h3>
+        <br />
         <p>
-          First, I was a hobby musician and music teacher. Then I was a
-          scientist (physics and materials science). Next I became a
-          professional musician, performing and returning to teaching. Most
-          recently I have pursued the software world.
+          As a teenager, I was a hobby musician and music teacher. Next I was a
+          scientist (physics and materials science). Then I became a
+          professional musician, performing (mostly jazz) and returning to
+          teaching. Most recently I have pursued the software world.
         </p>
+        <br />
         <p>
           I'm interested in many topics: music, science, software, technology,
           AI, philosophy, psychology, languages meditation. You could say I
@@ -56,80 +59,92 @@
         </p>
       </section>
       <section class="experiences-both">
-        <section class="experience">
-          <h2>Academia</h2>
-          <section class="experience-item">
+        <section class="column">
+          <section class="experience">
+            <h2>Academia</h2>
             <h3 class="item-date">2024 - present</h3>
-            <div class="item-details">
-              <p>Diploma of Information Technology</p>
-              <p>Full Stack Web Development</p>
-              <p>Coder Academy</p>
-            </div>
-          </section>
-          <section class="experience-item">
+
+            <section class="experience-item">
+              <div class="item-details">
+                <p>Diploma of Information Technology</p>
+                <p>Full Stack Web Development</p>
+                <p>Coder Academy</p>
+              </div>
+            </section>
             <h3 class="item-date">2020 - 2021</h3>
-            <div class="item-details">
-              <p>
-                Graduate Certificate in Research Studies (Materials Science)
-              </p>
-              <p>Inorganic Nanomaterials Laboratory</p>
-              <p>Queensland University of Technology</p>
-            </div>
-          </section>
-          <section class="experience-item">
+            <section class="experience-item">
+              <div class="item-details">
+                <p>Graduate Certificate in Research Studies</p>
+                <p><em>Materials Science</em></p>
+                <p>Inorganic Nanomaterials Laboratory</p>
+                <p>Queensland University of Technology</p>
+              </div>
+            </section>
             <h3 class="item-date">2021</h3>
-            <div class="item-details">
-              <p>First-Author Publication</p>
-              <p>Journal: Materials & Design</p>
-              <!-- ^^ change this line in resume file too -->
-              <a
-                href="https://doi.org/10.1016/j.matdes.2020.109403"
-                target="_blank"
-                >https://doi.org/10.1016/j.matdes.2020.109403
-              </a>
-            </div>
-          </section>
-          <section class="experience-item">
+            <section class="experience-item">
+              <div class="item-details">
+                <p>First-Author Publication</p>
+                <p>Journal: Materials & Design</p>
+                <!-- ^^ change this line in resume file too -->
+                <a
+                  href="https://doi.org/10.1016/j.matdes.2020.109403"
+                  target="_blank"
+                  >https://doi.org/10.1016/j.matdes.2020.109403
+                </a>
+              </div>
+            </section>
             <h3 class="item-date">2014 - 2019</h3>
-            <div class="item-details">
-              <p>Bachelor of Science (Physics) (First Class Honours)</p>
-              <p>Minors: Mechanical Engineering and Discrete Mathematics</p>
-              <p>Queensland University of Technology</p>
-            </div>
+            <section class="experience-item">
+              <div class="item-details">
+                <p>Bachelor of Science</p>
+                <p><em>Physics (First Class Honours)</em></p>
+                <!-- ^^ review all italics etc -->
+                <p>Minors: Mechanical Engineering, Discrete Mathematics</p>
+                <p>Queensland University of Technology</p>
+              </div>
+            </section>
           </section>
         </section>
-        <section class="experience">
-          <h2>Employment</h2>
-          <section class="experience-item">
+        <section class="column">
+          <section class="experience">
+            <h2>Employment</h2>
             <h3 class="item-date">2023 - present</h3>
-            <div class="item-details">
-              <p>Bus Operator</p>
-              <p>Brisbane City Council</p>
-            </div>
-          </section>
-          <section class="experience-item">
+            <section class="experience-item">
+              <!-- delete experience-item or item-details now that item-date is outside experience-item -->
+              <div class="item-details">
+                <p>Bus Operator</p>
+                <p>Brisbane City Council</p>
+              </div>
+            </section>
             <h3 class="item-date">2021 - present</h3>
-            <div class="item-details">
-              <p>Music Educator and Performer</p>
-              <p>JVT Music</p>
-            </div>
-          </section>
-          <section class="experience-item">
+            <section class="experience-item">
+              <div class="item-details">
+                <p>Music Educator and Performer</p>
+                <p>JVT Music</p>
+              </div>
+            </section>
             <h3 class="item-date">2021</h3>
-            <div class="item-details">
-              <p>Sessional Academic (Laboratory Demonstrator)</p>
-              <p>Queensland University of Technology</p>
-            </div>
+            <section class="experience-item">
+              <div class="item-details">
+                <p>Sessional Academic</p>
+                <p>Laboratory Demonstrator</p>
+                <p>Queensland University of Technology</p>
+              </div>
+            </section>
+          </section>
+          <section class="resume">
+            <!-- <section class="resume-link"> -->
+            <a id="resume-link" href="../JVT_Resume.pdf" target="_blank">
+              <i class="fa-regular fa-file"></i>
+              <!-- put <img> inside <a>? -->
+              <p>See my resume!</p>
+              <!-- See Beau's website -->
+              <!-- add resume/cv favicon or symbol -->
+              <!-- make resume much more detailed, including months -->
+            </a>
+            <!-- </section> -->
           </section>
         </section>
-      </section>
-      <section class="resume">
-        <a href="../JVT_Resume.pdf" target="_blank">
-          See my full resume
-          <!-- See Beau's website -->
-          <!-- add resume/cv favicon or symbol -->
-          <!-- make resume much more detailed, including months -->
-        </a>
       </section>
     </main>
     <footer>

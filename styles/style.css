@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  --background1: #42668c;
+  --background1: #1c4b7e;
   --background2: #6ecadf;
   --brown1: #523425;
   --yellow1: #fff200;
@@ -12,11 +12,15 @@
   --green-dark: #268416;
   --blue-light: #25b6e2;
   --blue-dark: rgb(12, 12, 158);
+  font-family: Arial, Helvetica, sans-serif;
+  /* ^^ did i include font properly? i didn't copy anything bc something was alreayd there for socials icons */
+/* ^^ put font in body? */
 }
 
 body {
   display: flex;
   flex-direction: column;
+  /* ^^ flex-direction: column bc mobile-first */
   justify-content: space-between;
   min-height: 100dvh;
 }
@@ -46,6 +50,9 @@ nav {
   flex-wrap: wrap;
   background-color: var(--background2);
   padding: 12px;
+  /* box-shadow: 0px 0px 8px 8px var(--background2); */
+  /* margin: 8px; */
+
 }
 
 nav a {
@@ -61,49 +68,13 @@ nav a:hover {
   /* text-decoration: underline; */
 }
 
-main {
-  background-color: var(--background1);
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  /* ^^ change this row (mobile first?) and adjust in media quiery */
-  color: var(--white1);
-  /* justify-content: space-between; */
-  /* align-items: center; */
-}
-
-main p {
-  padding: 32px;
-}
-
-.projects {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.project-snapshot {
-  background-color: var(--background2);
-  padding: 24px;
-  margin: 12px;
-  border-radius: 10%;
-
-  display: flex;
-  justify-content: center;
-}
-
-.project-snapshot a {
-  text-decoration: none;
-  color: var(--brown1);
-}
-
-.project-snapshot a h3 {
-  padding-bottom: 24px;
+.sidebar {
+  background-color: black;
 }
 
 footer {
-  background-color: var(--background1);
-  color: var(--white1);
+  background-color: var(--background2);
+  color: var(--brown1);
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -118,7 +89,7 @@ footer {
 }
 
 .social-media a i {
-  color: var(--white1);
+  color: var(--brown1);
   font-size: 32px;
 }
 
@@ -128,7 +99,6 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
-  /* ^^ should be max-width? how to do mobile-first? */
   /* ^^ do i need the "only" keyword? */
   /* i used 576px bc of bootstrap breakpoints */
   main {
@@ -136,3 +106,4 @@ footer {
     /* flex-wrap: wrap; */
   }
 }
+
