@@ -1,47 +1,79 @@
+.main-and-aside {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  /* width: 100%; */
+  justify-content: space-between;
+}
+/* can't get aside to work properly... delet? */
 
 main {
-    background-color: var(--background1);
-    padding: 32px;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* ^^ change this row (mobile first?) and adjust in media quiery */
-    color: var(--white1);
-    /* justify-content: space-between; */
-    /* align-items: center; */
-  }
-  
-  main p {
-    padding: 32px;
-  }
-  
-  .projects {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .project-snapshot {
-    background-color: var(--background2);
-    padding: 24px;
-    margin: 12px;
-    border-radius: 10%;
-    /* ^^ use px instead? */
-    box-shadow: 0px 0px 8px 8px var(--background2);
+  /* background-color: var(--background1); */
+  padding: 32px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* ^^ change this row (mobile first?) and adjust in media quiery */
+  color: var(--background6);
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* max-width: 50%; */
+}
 
-    display: flex;
-    justify-content: center;
-  }
-  
-  .project-snapshot a {
-    text-decoration: none;
-    color: var(--brown1);
-  }
-  
-  .project-snapshot a h3 {
-    padding-bottom: 24px;
-  }
-  
-  .snapshot-image {
-    border-radius: 16px;
-  }
-  
+.intro {
+  padding: 0px 24px 24px;
+}
+
+.intro ul {
+  padding-left: 64px;
+}
+
+main p {
+  padding: 32px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 32px;
+}
+
+.project-snapshot {
+  background-color: var(--background6);
+  padding: 24px;
+  margin: 12px;
+  border-radius: 48px;
+  box-shadow: 0px 0px 8px 8px var(--background5);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+
+.project-snapshot:hover {
+  box-shadow: 0px 0px 8px 8px var(--background6);
+
+}
+
+.project-snapshot h3 {
+  padding-bottom: 24px;
+  color: var(--background3);
+}
+
+.project-snapshot a {
+}
+
+.snapshot-image {
+  border-radius: 32px;
+}
+
+.snapshot-image:hover {
+  box-shadow: 0px 0px 8px 8px var(--background4);
+
+}
+
+aside {
+  background-color: red;
+  width: 100px;
+}

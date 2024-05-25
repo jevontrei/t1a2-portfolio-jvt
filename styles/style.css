@@ -3,15 +3,19 @@
   margin: 0;
   padding: 0;
   --background1: #1c4b7e;
-  --background2: #6ecadf;
+  --background2: #6edfd6;
+  --background3: #002000;
+  --background4: #004000;
+  --background5: #52C652;
+  --background6: #dcffdc;
   --brown1: #523425;
-  --yellow1: #fff200;
+  --yellow1: yellow;
   --white1: #ffffff;
   --black1: #000000;
   --green-light: #5cde72;
   --green-dark: #268416;
   --blue-light: #25b6e2;
-  --blue-dark: rgb(12, 12, 158);
+  --blue-dark: #0c0c9e;
   font-family: Arial, Helvetica, sans-serif;
   /* ^^ did i include font properly? i didn't copy anything bc something was alreayd there for socials icons */
 /* ^^ put font in body? */
@@ -26,18 +30,23 @@ body {
 }
 
 header {
-  background-color: var(--background1);
+  background-color: var(--background4);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  color: var(--white1);
+  color: var(--background6);
 }
 
 .logo {
   padding: 30px;
   /* border-radius: 50%; */
   /* ^^ why border-radius not working? */
+}
+
+.logo:hover {
+  filter: drop-shadow(var(--background6) 5px 5px 5px);
+
 }
 
 .heading {
@@ -48,8 +57,9 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: var(--background2);
+  background-color: var(--background5);
   padding: 12px;
+  font-size: 24px;
   /* box-shadow: 0px 0px 8px 8px var(--background2); */
   /* margin: 8px; */
 
@@ -59,7 +69,7 @@ nav a {
   /* margin: 8px; */
   /* padding: 8px; */
   text-decoration: none;
-  color: var(--brown1);
+  color: var(--background3);
 }
 
 nav a:hover {
@@ -68,17 +78,27 @@ nav a:hover {
   /* text-decoration: underline; */
 }
 
+main {
+  background-color: var(--background4);
+  padding-bottom: 24px;
+}
+
 .sidebar {
   background-color: black;
 }
 
 footer {
-  background-color: var(--background2);
-  color: var(--brown1);
+  background-color: var(--background5);
+  color: var(--background3);
   padding: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* margin-top: 24px; */
+}
+
+footer p {
+  font-size: 24px;
 }
 
 .social-media {
@@ -89,13 +109,14 @@ footer {
 }
 
 .social-media a i {
-  color: var(--brown1);
-  font-size: 32px;
+  color: var(--background3);
+  font-size: 40px;
 }
 
 .social-media a i:hover {
   /* filter: drop-shadow(5px 5px); */
-  filter: drop-shadow(var(--yellow1) 5px 5px 5px);
+  filter: drop-shadow(var(--background6) 5px 5px 5px);
+  font-weight: bold;
 }
 
 @media screen and (min-width: 576px) {
