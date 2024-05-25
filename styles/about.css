@@ -127,7 +127,7 @@ main {
   border-radius: 48px;
   width: fit-content;
   height: fit-content;
-  box-shadow: 0px 0px 8px 8px var(--background6);
+  box-shadow: 0px 0px 4px 4px var(--background6);
   /* height: 50px; */
   /* display: flex;
   flex-direction: column;

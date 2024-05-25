@@ -16,7 +16,8 @@
   --green-dark: #268416;
   --blue-light: #25b6e2;
   --blue-dark: #0c0c9e;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* ^^ did i include font properly? i didn't copy anything bc something was alreayd there for socials icons */
 /* ^^ put font in body? */
 }
@@ -89,7 +90,6 @@ main {
 
 footer {
   background-color: var(--background5);
-  color: var(--background3);
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -99,6 +99,7 @@ footer {
 
 footer p {
   font-size: 24px;
+  color: var(--background3);
 }
 
 .social-media {
