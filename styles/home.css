@@ -7,13 +7,18 @@
 /* } */
 /* can't get aside to work properly... delet? */
 
+.nav-tab {
+  background-color: var(--background6);
+  border-radius: 24px 24px 0 0;
+}
+
 main {
   /* background-color: var(--background1); */
   padding: 32px;
   /* display: flex; */
   /* flex-direction: column; */
   /* ^^ change this row (mobile first?) and adjust in media quiery */
-  color: var(--background6);
+  color: var(--background3);
   /* justify-content: space-between; */
   /* align-items: center; */
   /* max-width: 50%; */
@@ -39,11 +44,11 @@ main p {
 }
 
 .project-snapshot {
-  background-color: var(--background6);
+  background-color: var(--background4);
   padding: 24px;
   margin: 12px;
   border-radius: 48px;
-  box-shadow: 0px 0px 8px 8px var(--background5);
+  /* box-shadow: 0px 0px 8px 8px var(--background5); */
   display: flex;
   flex-direction: column;
   /* justify-content: space-around; */
@@ -51,12 +56,20 @@ main p {
 }
 
 .project-snapshot:hover {
-  box-shadow: 0px 0px 8px 8px var(--background6);
+  /* box-shadow: 0px 0px 8px 8px var(--background6); */
+  /* box-shadow: 0px 0px 8px 8px var(--background4); */
+  background-color: var(--background6);
+
+
+}
+
+.project-snapshot:hover > h3 {
+  color: var(--background3);
 }
 
 .project-snapshot h3 {
   padding-bottom: 24px;
-  color: var(--background3);
+  color: var(--background6);
 }
 
 .project-snapshot a {
