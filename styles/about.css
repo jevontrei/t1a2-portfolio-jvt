@@ -1,3 +1,6 @@
+
+/* why is intro font larger than other pages? */
+
 main {
   display: flex;
   flex-direction: column;
@@ -128,7 +131,7 @@ main {
   border-radius: 0px 48px 0px;
   width: fit-content;
   height: fit-content;
-  box-shadow: 0px 0px 4px 4px var(--background6);
+  /* box-shadow: 0px 0px 4px 4px var(--background6); */
   /* height: 50px; */
   /* display: flex;
   flex-direction: column;
@@ -147,11 +150,21 @@ main {
 #resume-link {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  gap: 12px;
   color: var(--background3);
   text-decoration: none;
+}
+
+.fa-regular {
+  /* ^^ space-separated = two separate classes */
+  padding: 12px;
+  font-size: 32px;
+  /* font-weight: bold; */
+}
+
+#resume-link p {
+  padding: 12px;
 }
 
 #resume-link:hover {
