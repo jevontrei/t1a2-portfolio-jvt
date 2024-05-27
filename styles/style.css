@@ -22,11 +22,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100dvh;
+  /* min-height: 100dvh; */
+  background-color: ; var(--background6);
 }
 
 header {
-  background-color: var(--background4);
+  background: var(--background4);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,13 +35,15 @@ header {
   color: var(--background6);
 }
 
+.logo:hover {
+  opacity: 0.8;
+}
+
 .logo a img {
   margin: 30px;
   border-radius: 0 96px 0 96px;
-}
-
-.logo:hover {
-  opacity: 0.8;
+  width: 100%;
+  max-width: 300px;
 }
 
 .heading {
@@ -51,7 +54,7 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: var(--background5);
+  background: var(--background5);
   font-size: 24px;
 }
 
@@ -61,29 +64,24 @@ nav a {
   color: var(--background3);
 }
 
-.nav-tab {
-  background-color: var(--background6);
-  border-radius: 0 24px 0 24px;
-}
-
 nav a:hover {
-  background-color: var(--background4);
+  background: var(--background4);
   color: var(--background6);
   border-radius: 0 0 24px 24px;
 }
 
+.nav-tab {
+  background: var(--background6);
+  border-radius: 0 24px 0 24px;
+}
+
 main {
-  background-color: var(--background6);
+  background: var(--background6);
   padding-bottom: 24px;
 }
 
-main p {
-  /* padding: 32px; */
-}
-
 .intro {
-  padding: 32px;
-
+  padding: 12px 32px 32px;
 }
 
 .intro p {
@@ -96,7 +94,7 @@ main p {
 }
 
 footer {
-  background-color: var(--background5);
+  background: var(--background5);
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -105,7 +103,7 @@ footer {
 }
 
 footer p {
-  font-size: 24px;
+  font-size: 20px;
   color: var(--background3);
 }
 
@@ -127,11 +125,17 @@ footer p {
   color: var(--background6);
 }
 
-@media screen and (min-width: 576px) {
-  /* ^^ do i need the "only" keyword? */
-  /* i used 576px bc of bootstrap breakpoints */
+/* Media breakpoint for tablets */
+/* vv do i need the "only" keyword? */
+/* @media screen and (min-width: 576px) {
   main {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
   }
-}
+} */
+
+/* Media breakpoint for desktops */
+/* add/subtract 0.02? see bootstrap site */
+/* @media screen and (min-width: 992px) {
+
+} */

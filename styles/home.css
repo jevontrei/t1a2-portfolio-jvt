@@ -1,12 +1,19 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 12px 24px;
+}
+
 .projects {
   background-color: var(--background5);
   border-radius: 0 60px 0 60px;
-  padding: 24px;
-  margin: 24px;
+  padding: 12px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  row-gap: 32px;
+  width: 90%;
+  max-width: 500px;
 }
 
 .projects:hover {
@@ -21,14 +28,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 420px;
 }
 
 .project-snapshot:hover {
   background-color: var(--background6);
-}
-
-.project-snapshot:hover > h3 {
-  color: var(--background3);
 }
 
 .project-snapshot h3 {
@@ -36,16 +41,36 @@
   color: var(--background6);
 }
 
-.project-snapshot a {
+.project-snapshot:hover > h3 {
+  color: var(--background3);
 }
 
 .snapshot-image {
   border-radius: 0 32px 0 32px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .snapshot-image:hover {
   box-shadow: 0px 0px 8px 8px var(--background4);
 }
 
-@media screen {
+/* Media breakpoint for tablets */
+/* vv do i need the "only" keyword? */
+@media screen and (min-width: 576px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* Media breakpoint for desktops */
+/* add/subtract 0.02? see bootstrap site */
+@media screen and (min-width: 992px) {
+
+  .projects {
+    width: 90%;
+    max-width: 1500px;
+  }
+
 }

@@ -9,10 +9,15 @@ main h2 {
 }
 
 .contact-form {
+  margin: 24px;
   padding: 32px;
   background-color: var(--background5);
-  margin: 24px;
   border-radius: 0 48px 0 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
 }
 
 .contact-form:hover {
@@ -20,6 +25,41 @@ main h2 {
 }
 
 .form-item {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-item label {
+  width: 140px;
+  font-size: 24px;
+}
+
+.form-input {
+  margin-left: 32px;
+  width: 200px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+#submit {
+  height: 48px;
+  width: 120px;
+  background-color: var(--background4);
+  border-radius: 8px;
+  color: var(--background6);
+  font-size: 20px;
+  padding: 8px;
+}
+
+#direct {
+  padding: 12px 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#direct address a {
+    font-style: normal;
 }
 
 @media screen {

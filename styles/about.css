@@ -95,11 +95,6 @@ main {
   text-decoration: none;
 }
 
-.fa-regular {
-  padding: 12px;
-  font-size: 32px;
-}
-
 #resume-link p {
   padding: 12px;
 }
@@ -107,6 +102,11 @@ main {
 #resume-link:hover {
   text-decoration: none;
   font-weight: bold;
+}
+
+.fa-regular {
+  padding: 12px;
+  font-size: 32px;
 }
 
 /* @keyframes {

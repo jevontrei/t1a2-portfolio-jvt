@@ -1,7 +1,7 @@
-main {
-  display: flex;
-  flex-direction: column;
-}
+/* main {
+    display: flex;
+    flex-direction: column;
+} */
 
 .blog {
   background-color: var(--background5);

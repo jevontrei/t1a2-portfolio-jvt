@@ -1,3 +1,8 @@
+/* main {
+  display: flex;
+  flex-direction: column;
+} */
+
 .all-projects {
   display: flex;
   justify-content: space-around;
@@ -34,13 +39,13 @@
   width: 440px;
 }
 
+.tool:hover {
+  background-color: var(--background6);
+}
+
 .tool p {
   padding: 16px;
   font-size: 20px;
-}
-
-.tool:hover {
-  background-color: var(--background6);
 }
 
 .tool:hover > p {
