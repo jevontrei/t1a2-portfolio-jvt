@@ -33,3 +33,9 @@ R5 and R6: all wireframe and sitemap screenshots!
 R7: component: i.e. the ones in R2 and R3
 
 for deliverable/file structure, listen 2:32:00 re doc, src folder etc. The readme.md uses docs folder - for images? copy whole prject source code into src folder?
+
+
+
+
+<a> tags on home page just link to project page, not specific tools
+... <a> tags on images in projects page don't go anywhere yet (#)

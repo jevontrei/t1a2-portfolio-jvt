@@ -1,18 +1,24 @@
 main {
-  /* padding: 32px; */
-  /* } */
-
-  /* .all-blogs { */
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 
 .blog {
-    background-color: var(--background5);
-    color: var(--background3);
-    border-radius: 0px 48px 0px;
-    padding: 24px 32px 32px 32px;
-    /* padding: 32px; */
-    margin: 0 32px 32px 32px;
+  background-color: var(--background5);
+  color: var(--background3);
+  border-radius: 0px 48px 0px;
+  padding: 24px 32px 32px 32px;
+  margin: 0 32px 32px 32px;
+}
+
+.blog:hover {
+  background-color: var(--background6);
+}
+
+.blog img {
+  margin: 24px 0;
+  border-radius: 0px 64px 0px;
+}
+
+@media screen {
 }

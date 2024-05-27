@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/home.css" />
     <link rel="icon" href="./images/JVT2-GPT.png" />
-    <!-- ^^ change favicon to cropped image -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -18,16 +17,15 @@
   </head>
   <body>
     <header>
-      <div class="logo">
+      <figure class="logo">
         <a href="#">
           <img
             src="./images/JVT2-GPT.png"
             alt="JVT logo; square"
             style="width: 300px"
           />
-          <!-- ^^ inline styling? -->
         </a>
-      </div>
+      </figure>
       <h1 class="heading">Joel von Treifeldt</h1>
     </header>
     <nav>
@@ -37,35 +35,25 @@
       <a href="./pages/blog.html">Blog</a>
       <a href="./pages/contact.html">Contact</a>
     </nav>
-    <!-- <div class="main-and-aside"> -->
     <main>
-      <section class="intro">
-        <!-- <h2>Home</h2> -->
+      <article class="intro">
         <p>
           I am a full-stack web developer interested in building software tools
           for science, maths and music. I have experience in software
           development, materials science research and music. I have also taught
           science and music at various stages in my life.
-          <br />
-          <br />
-          Things I'm learning:
         </p>
-        <ul>
-          <!-- does <ul> go inside <p>? -->
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-          <!-- <li>AI/ML</li> -->
-        </ul>
-      </section>
+        <br />
+        <p>
+          This website is where I showcase my favourite projects, where I
+          describe my life to date, and where I can think out loud via blogging.
+        </p>
+      </article>
       <!-- .....e.g. Graphical Component 1: some info..... -->
       <article class="projects">
         <section class="project-snapshot">
           <h3>Maths Tools</h3>
           <a href="./pages/projects.html">
-            <!-- ^^ edit this to link to maths tool -->
-
             <img
               class="snapshot-image"
               src="./images/maths.png"
@@ -77,7 +65,6 @@
         <section class="project-snapshot">
           <h3>Science Tools</h3>
           <a href="./pages/projects.html">
-            <!-- ^^ edit this to link to science tool -->
             <img
               class="snapshot-image"
               src="./images/crystal.png"
@@ -86,11 +73,9 @@
             />
           </a>
         </section>
-        <!-- ^^ article or section? vv -->
         <section class="project-snapshot">
           <h3>Music Theory Tools</h3>
           <a href="./pages/projects.html">
-            <!-- ^^ edit this to link to music tool -->
             <img
               class="snapshot-image"
               src="./images/piano.png"
@@ -101,10 +86,6 @@
         </section>
       </article>
     </main>
-    <!-- <aside class="sidebar">
-        <p>this is an aside</p>
-      </aside> -->
-    <!-- </div> -->
     <footer>
       <div class="social-media">
         <a

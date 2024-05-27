@@ -1,4 +1,3 @@
-/* vv use  selector or :root selector? vv */
 * {
   margin: 0;
   padding: 0;
@@ -16,16 +15,12 @@
   --green-dark: #268416;
   --blue-light: #25b6e2;
   --blue-dark: #0c0c9e;
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* ^^ did i include font properly? i didn't copy anything bc something was alreayd there for socials icons */
-  /* ^^ put font in body? */
 }
 
 body {
   display: flex;
   flex-direction: column;
-  /* ^^ flex-direction: column bc mobile-first */
   justify-content: space-between;
   min-height: 100dvh;
 }
@@ -37,8 +32,6 @@ header {
   align-items: center;
   justify-content: space-around;
   color: var(--background6);
-  /* filter: drop-shadow(var(--background4) 5px 5px 5px); */
-  /* filter: drop-shadow(8px 8px 8px var(--background4)); */
 }
 
 .logo a img {
@@ -47,7 +40,6 @@ header {
 }
 
 .logo:hover {
-  /* filter: drop-shadow(var(--background6) 5px 5px 5px); */
   opacity: 0.8;
 }
 
@@ -60,16 +52,10 @@ nav {
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: var(--background5);
-  /* margin-top: 12px; */
   font-size: 24px;
-  /* box-shadow: 0px 0px 8px 8px var(--background2); */
-  /* margin: 8px; */
-  /* padding: 0px 400px; */
-  /* filter: drop-shadow(8px 8px 8px var(--background5)); */
 }
 
 nav a {
-  /* margin: 8px; */
   padding: 12px;
   text-decoration: none;
   color: var(--background3);
@@ -77,24 +63,17 @@ nav a {
 
 .nav-tab {
   background-color: var(--background6);
-  /* border-radius: 24px 24px 0 0; */
-  /* border-radius: 24px; */
   border-radius: 0 24px 0 24px;
 }
 
 nav a:hover {
-  /* font-weight: bold; */
-  /* filter: drop-shadow(var(--green-dark) 5px 5px 5px); */
-  /* text-decoration: underline; */
   background-color: var(--background4);
   color: var(--background6);
   border-radius: 0 0 24px 24px;
 }
 
 main {
-  /* background-color: var(--background4); */
   background-color: var(--background6);
-  /* padding: 48px; */
   padding-bottom: 24px;
 }
 
@@ -103,12 +82,8 @@ main p {
 }
 
 .intro {
-  /* color: var(--background3); */
-  /* make spacing between heading and text same as home page etc */
   padding: 32px;
-  /* margin: 24px; */
-  /* margin: 24px 24px 12px; */
-  /* margin: 24px; */
+
 }
 
 .intro p {
@@ -119,10 +94,6 @@ main p {
 .intro ul {
   padding-left: 64px;
 }
-
-/* .sidebar {
-  background-color: black;
-} */
 
 footer {
   background-color: var(--background5);
@@ -151,8 +122,6 @@ footer p {
 }
 
 .social-media a i:hover {
-  /* filter: drop-shadow(5px 5px); */
-  /* filter: drop-shadow(var(--background6) 5px 5px 5px); */
   font-weight: bold;
   font-size: 48px;
   color: var(--background6);
