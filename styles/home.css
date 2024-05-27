@@ -1,10 +1,3 @@
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 12px 12px 24px;
-}
-
 .projects {
   background-color: var(--background5);
   border-radius: 0 60px 0 60px;
@@ -56,20 +49,26 @@ main {
 }
 
 /* Media breakpoint for tablets */
-/* vv do i need the "only" keyword? */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 991.98) {
   main {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+  }
+
+  .project-snapshot {
+    width: 30%;
   }
 }
 
 /* Media breakpoint for desktops */
-/* add/subtract 0.02? see bootstrap site */
 @media screen and (min-width: 992px) {
 
   .projects {
-    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     max-width: 1500px;
   }
 
