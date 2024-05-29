@@ -1,3 +1,4 @@
+/* The global selector resets margin and padding, and defines colors and fonts to be used throughout the website  */
 * {
   margin: 0;
   padding: 0;
@@ -69,10 +70,10 @@ nav a:hover {
   border-radius: 0 0 24px 24px;
 }
 
-.nav-tab {
+/* .nav-tab {
   background: var(--background6);
   border-radius: 0 24px 0 24px;
-}
+} */
 
 main {
   background: var(--background6);
