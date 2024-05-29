@@ -2,43 +2,40 @@
 * {
   margin: 0;
   padding: 0;
-  --background1: #1c4b7e;
-  --background2: #6edfd6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   --background3: #002000;
   --background4: #004000;
   --background5: #52c652;
   --background6: #dcffdc;
-  --brown1: #523425;
-  --yellow1: yellow;
-  --white1: #ffffff;
-  --black1: #000000;
-  --green-light: #5cde72;
-  --green-dark: #268416;
-  --blue-light: #25b6e2;
-  --blue-dark: #0c0c9e;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* The body selector defines background color and mobile-first flex behaviour */
 body {
+  background: var(--background6);
+
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  background-color: var(--background6);
 }
 
+/* The header selector ... */
 header {
   background: var(--background4);
+  color: var(--background6);
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  color: var(--background6);
 }
 
+/* The :hover pseudoclass ...  */
 .logo:hover {
   opacity: 0.8;
 }
 
+/* The ... */
 .logo a img {
   margin: 30px;
   border-radius: 0 96px 0 96px;
@@ -46,38 +43,41 @@ header {
   max-width: 300px;
 }
 
+/* The ... */
 .heading {
   padding-bottom: 30px;
 }
 
+/* The navigation bar ...  */
 nav {
+  background: var(--background5);
+  font-size: 24px;
+  width: 100%;
+
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: var(--background5);
-  font-size: 24px;
 }
 
+/* The ... */
 nav a {
   padding: 12px;
   text-decoration: none;
   color: var(--background3);
 }
 
+/* The ... */
 nav a:hover {
   background: var(--background4);
   color: var(--background6);
   border-radius: 0 0 24px 24px;
 }
 
-/* .nav-tab {
-  background: var(--background6);
-  border-radius: 0 24px 0 24px;
-} */
-
+/* The ... */
 main {
-  background: var(--background6);
   padding: 12px 12px 24px;
+  /* background: var(--background6); */
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,12 +97,12 @@ main {
 }
 
 footer {
+  padding: 48px;
   background: var(--background5);
-  padding: 32px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 48px;
 }
 
 footer p {
@@ -129,16 +129,21 @@ footer p {
 }
 
 /* Media breakpoint for tablets */
-/* vv do i need the "only" keyword? */
-/* @media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 991.98) {
+  
+  header {
+    flex-direction: row;
+  }
+
   main {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
   }
-} */
+}
 
 /* Media breakpoint for desktops */
-/* add/subtract 0.02? see bootstrap site */
 /* @media screen and (min-width: 992px) {
 
 } */

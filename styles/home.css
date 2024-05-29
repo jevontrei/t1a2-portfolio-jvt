@@ -1,16 +1,19 @@
+/* The ... element ...  */
+
 .projects {
-  background-color: var(--background5);
-  border-radius: 0 60px 0 60px;
+  /* background-color: var(--background5); */
+  /* border-radius: 0 60px 0 60px; */
   padding: 12px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 90%;
-  max-width: 500px;
+  /* width: 90%;
+  max-width: 500px; */
 }
 
 .projects:hover {
-  background-color: var(--background6);
+  /* background-color: var(--background6); */
 }
 
 .project-snapshot {
@@ -51,10 +54,7 @@
 /* Media breakpoint for tablets */
 @media screen and (min-width: 576px) and (max-width: 991.98) {
   main {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* flex-wrap: wrap; */
+
   }
 
   .project-snapshot {
@@ -63,13 +63,14 @@
 }
 
 /* Media breakpoint for desktops */
-@media screen and (min-width: 992px) {
+
+/* @media screen and (min-width: 992px) {
 
   .projects {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1500px;
-  }
+  } */
 
 }

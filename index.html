@@ -1,5 +1,8 @@
+<!-- The !doctype tag informs browsers ...  -->
 <!DOCTYPE html>
+<!-- The html element contains all ...  -->
 <html lang="en">
+  <!-- The head defines metadata ...  -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,46 +19,72 @@
     />
   </head>
   <body>
+    <!-- The header ...  -->
     <header>
+      <!-- The logo ... -->
       <figure class="logo">
         <a href="#">
           <img src="./images/JVT2-GPT.png" alt="JVT logo; square" />
         </a>
       </figure>
       <h1 class="heading">Joel von Treifeldt</h1>
+      <!-- The navigation menu ...  -->
+      <nav>
+        <a href="#">Home</a>
+        <a href="./pages/about.html">About</a>
+        <a href="./pages/projects.html">Projects</a>
+        <!-- <a href="./pages/blog.html">Blog</a> -->
+        <a href="./pages/contact.html">Contact</a>
+      </nav>
     </header>
-    <nav>
-      <!-- delete nav-tab class vv -->
-      <a class="nav-tab" href="#">Home</a>
-      <a href="./pages/about.html">About</a>
-      <a href="./pages/projects.html">Projects</a>
-      <a href="./pages/blog.html">Blog</a>
-      <a href="./pages/contact.html">Contact</a>
-    </nav>
+    <!-- The main element ...  -->
     <main>
+      <!-- The introduction element ...  -->
       <article class="intro">
         <h1>Hello!</h1>
         <br />
         <p>
           I am a web developer interested in building software tools for
           science, maths and music. I have experience in software development,
-          materials science research and music. This website is where I showcase my favourite projects, where I
-          describe my life to date, and where I can think out loud via my blog.
+          materials science research and music. This website is where I showcase
+          my favourite projects, where I describe my life to date, and where I
+          can think out loud via my blog.
         </p>
       </article>
-      <!-- .....e.g. Graphical Component 1: Snapshots of ... some info..... -->
-      <article class="projects">
-        <section class="project-snapshot">
-          <h3>Maths Tools</h3>
-          <a href="./pages/projects.html">
-            <img
-              class="snapshot-image"
-              src="./images/maths.png"
-              alt="Person learning maths with VR headset; landscape"
-            />
+      <!-- .....e.g. Graphical Component 1: Snapshots of ... some info ...  -->
+      <!-- <article class="projects"> -->
+      <article class="project-portal">
+        <a href="./pages/projects.html">
+          <h3>Check out my work</h3>
+          <img
+            class="snapshot-image"
+            src="./images/maths.png"
+            alt="Person learning maths with VR headset; landscape"
+          />
+        </a>
+      </article>
+      <article class="blog-portal">
+        <h3>Read my blog</h3>
+        <ul>
+          <a href="./pages/blog/blog1.html">
+            <li><em>The Meaning of Life</em>; 13 March 2024</li>
           </a>
-        </section>
-        <section class="project-snapshot">
+          <a href="./pages/blog/blog2.html">
+            <li><em>Learning Programming</em>; 17 January 2024</li>
+          </a>
+          <a href="./pages/blog/blog3.html">
+            <li><em>Learning Music</em>; 31 December 2022</li>
+          </a>
+          <a href="./pages/blog/blog4.html">
+            <li><em>Eating Well</em>; 29 April 2021</li>
+          </a>
+          <a href="./pages/blog/blog5.html">
+            <li><em>Sunsets</em>; 6 June 2019</li>
+          </a>
+        </ul>
+        <a href="."> </a>
+      </article>
+      <!-- <section class="project-snapshot">
           <h3>Science Tools</h3>
           <a href="./pages/projects.html">
             <img
@@ -64,8 +93,8 @@
               alt="Crystal lattice; landscape"
             />
           </a>
-        </section>
-        <section class="project-snapshot">
+        </section> -->
+      <!-- <section class="project-snapshot">
           <h3>Music Theory Tools</h3>
           <a href="./pages/projects.html">
             <img
@@ -74,10 +103,12 @@
               alt="Guitar fretboard; landscape"
             />
           </a>
-        </section>
-      </article>
+        </section> -->
+      <!-- </article> -->
     </main>
+    <!-- The footer ...  -->
     <footer>
+      <!-- Sociam media icons and links ...  -->
       <div class="social-media">
         <a
           href="https://www.linkedin.com/in/joel-von-treifeldt/"
