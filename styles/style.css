@@ -6,14 +6,16 @@
 
   --background3: #002000;
   --background4: #004000;
-  --background5: #52c652;
+  --background5: #d675e8;
   --background6: #dcffdc;
 }
 
 /* The body selector defines background color and mobile-first flex behaviour */
 body {
-  background: var(--background6);
-
+  /* background: var(--background6); */
+  background: linear-gradient(to left bottom, var(--background5), var(--background6));
+  /* color: var(--background3); */
+  /* ^^ undersdtand and fix this font color / global or not? */
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
@@ -21,70 +23,84 @@ body {
 
 /* The header selector ... */
 header {
+  margin: 12px;
+  padding: 12px;
+  border-radius: 24px;
   background: var(--background4);
   color: var(--background6);
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  margin: 12px;
+  /* padding: 0; */
+  border-radius: 24px;
+}
+
+/* The ... */
+.logo img {
+  /* border-radius: 24px; */
+  width: 100%;
+  max-width: 300px;
+  border-radius: 24px;
 }
 
 /* The :hover pseudoclass ...  */
-.logo:hover {
+.logo img:hover {
   opacity: 0.8;
-}
-
-/* The ... */
-.logo a img {
-  margin: 30px;
-  border-radius: 0 96px 0 96px;
-  width: 100%;
-  max-width: 300px;
-}
-
-/* The ... */
-.heading {
-  padding-bottom: 30px;
+  box-shadow: 0 0 4px var(--background6);
 }
 
 /* The navigation bar ...  */
 nav {
-  background: var(--background5);
+  margin: 12px;
+  /* padding: 12px; */
   font-size: 24px;
-  width: 100%;
-
+  /* width: 100%; */
+  height: 100%;
+  /* ^^ how to make it go to top? */
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 16px;
 }
 
 /* The ... */
 nav a {
-  padding: 12px;
+  padding: 8px;
+  /* margin: 8px; */
   text-decoration: none;
-  color: var(--background3);
+  color: var(--background6);
+  border: 1px solid var(--background3);
+  border-color: var(--background6);
+  border-radius: 12px;
+  box-shadow: 0 0 4px var(--background6);
 }
 
 /* The ... */
 nav a:hover {
-  background: var(--background4);
-  color: var(--background6);
-  border-radius: 0 0 24px 24px;
+  background: var(--background6);
+  color: var(--background3);
 }
 
 /* The ... */
 main {
-  padding: 12px 12px 24px;
-  /* background: var(--background6); */
+  margin: 12px;
+  padding: 12px;
 
   display: flex;
   flex-direction: column;
+  /* justify-content: space-around; */
   align-items: center;
 }
 
 .intro {
-  padding: 12px 32px 32px;
+  margin: 12px;
+  padding: 12px;
 }
 
 .intro p {
@@ -97,28 +113,28 @@ main {
 }
 
 footer {
-  padding: 48px;
-  background: var(--background5);
-  
+  margin: 12px;
+  padding: 12px;
+  border-radius: 24px;
+  background: var(--background4);
+
   display: flex;
   flex-direction: column;
+  /* justify-content: space-around; */
   align-items: center;
 }
 
-footer p {
-  font-size: 20px;
-  color: var(--background3);
-}
-
 .social-media {
+  margin: 12px 0 0 0;
+  padding: 12px;
+
   display: flex;
   justify-content: space-between;
-  padding-bottom: 24px;
   gap: 24px;
 }
 
 .social-media a i {
-  color: var(--background3);
+  color: var(--background6);
   font-size: 40px;
 }
 
@@ -128,15 +144,36 @@ footer p {
   color: var(--background6);
 }
 
+footer p {
+  margin: 0 0 12px 0;
+  padding: 12px;
+  font-size: 20px;
+  color: var(--background6);
+}
+
 /* Media breakpoint for tablets */
-@media screen and (min-width: 576px) and (max-width: 991.98) {
-  
+@media screen and (min-width: 576px) /* and (max-width: 991.98) */ {
   header {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .logo-and-name {
+    max-width: 49%;
+  }
+
+  nav {
+    /* width: 50%; */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    max-width: 49%;
+    height: 100%;
   }
 
   main {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
@@ -144,6 +181,8 @@ footer p {
 }
 
 /* Media breakpoint for desktops */
-/* @media screen and (min-width: 992px) {
-
-} */
+@media screen and (min-width: 992px) {
+  nav {
+    flex-direction: row;
+  }
+}

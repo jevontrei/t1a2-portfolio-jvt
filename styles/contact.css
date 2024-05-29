@@ -12,7 +12,8 @@ main h2 {
   margin: 24px;
   padding: 32px;
   background-color: var(--background5);
-  border-radius: 0 48px 0 48px;
+  /* border-radius: 0 48px 0 48px; */
+  border-radius: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

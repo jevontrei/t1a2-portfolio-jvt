@@ -6,7 +6,8 @@
 .blog {
   background-color: var(--background5);
   color: var(--background3);
-  border-radius: 0px 48px 0px;
+  /* border-radius: 0px 48px 0px; */
+  border-radius: 24px;
   padding: 24px 32px 32px 32px;
   margin: 0 32px 32px 32px;
 }
@@ -17,7 +18,8 @@
 
 .blog img {
   margin: 24px 0;
-  border-radius: 0px 64px 0px;
+  /* border-radius: 0px 64px 0px; */
+  border-radius: 24px;
 }
 
 @media screen {

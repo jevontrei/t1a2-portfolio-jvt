@@ -1,26 +1,27 @@
 /* The ... element ...  */
 
-.projects {
+/* .projects { */
   /* background-color: var(--background5); */
   /* border-radius: 0 60px 0 60px; */
-  padding: 12px;
+  /* padding: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   /* width: 90%;
   max-width: 500px; */
-}
+/* } */
 
-.projects:hover {
+/* .projects:hover { */
   /* background-color: var(--background6); */
-}
+/* } */
 
 .project-snapshot {
   background-color: var(--background4);
   padding: 24px;
   margin: 12px;
-  border-radius: 0 48px 0 48px;
+  /* border-radius: 0 48px 0 48px; */
+  border-radius: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,7 +43,7 @@
 }
 
 .snapshot-image {
-  border-radius: 0 32px 0 32px;
+  border-radius: 24px;
   width: 100%;
   max-width: 400px;
 }
@@ -51,16 +52,30 @@
   box-shadow: 0px 0px 8px 8px var(--background4);
 }
 
-/* Media breakpoint for tablets */
-@media screen and (min-width: 576px) and (max-width: 991.98) {
-  main {
 
-  }
 
-  .project-snapshot {
-    width: 30%;
-  }
+.project-portal {
+  margin: 12px;
+  padding: 12px;
 }
+
+.project-portal h3 {
+  padding: 12px;
+}
+
+.blog-portal {
+  margin: 12px;
+  padding: 12px;
+}
+
+.blog-portal h3 {
+  padding: 12px;
+}
+
+/* Media breakpoint for tablets */
+/* @media screen and (min-width: 576px) and (max-width: 991.98) {
+
+} */
 
 /* Media breakpoint for desktops */
 
