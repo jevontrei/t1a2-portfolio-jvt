@@ -37,47 +37,50 @@
     <main>
       <!-- The introduction element ...  -->
       <article class="intro">
-        <h1>Hello! I'm Joel.</h1>
-        <br />
-        <p>
-          I am a web developer interested in building software tools for
-          science, maths and music. I have experience in software development,
-          materials science research and music. This website is where I showcase
-          my favourite projects, where I describe my life to date, and where I
-          can think out loud via my blog.
-        </p>
+        <section class="intro-text">
+          <br />
+          <h1>Hello! I'm Joel.</h1>
+          <p>
+            I am a web developer interested in building software tools for
+            science, maths and music. I have experience in software development,
+            materials science research and music. This website is where I
+            showcase my favourite projects, where I describe my life to date,
+            and where I can think out loud via my blog.
+          </p>
+        </section>
+        <img src="./images/me.jpg" alt="A portrait of me; square?" />
       </article>
       <!-- .....e.g. Graphical Component 1: Snapshots of ... some info ...  -->
       <article class="portals">
-        <a class="project-portal" href="./pages/projects.html">
-          <h3>Check out my work</h3>
-          <img
-            class="snapshot-image"
-            src="./images/maths.png"
-            alt="Person learning maths with VR headset; landscape"
-          />
-        </a>
-        <article class="blog-portal">
-          <h3>Read my blog</h3>
+        <section class="blog-portal">
+          <h2>Read my blog</h2>
           <ul>
             <a href="./pages/blog/blog1.html">
-              <li><em>The Meaning of Life</em>; 13 March 2024</li>
+              <li><em>The Meaning of Life</em> | 13 March 2024</li>
             </a>
             <a href="./pages/blog/blog2.html">
-              <li><em>Learning Programming</em>; 17 January 2024</li>
+              <li><em>Learning Programming</em> | 17 January 2024</li>
             </a>
             <a href="./pages/blog/blog3.html">
-              <li><em>Learning Music</em>; 31 December 2022</li>
+              <li><em>Learning Music</em> | 31 December 2022</li>
             </a>
             <a href="./pages/blog/blog4.html">
-              <li><em>Eating Well</em>; 29 April 2021</li>
+              <li><em>Eating Well</em> | 29 April 2021</li>
             </a>
             <a href="./pages/blog/blog5.html">
-              <li><em>Sunsets</em>; 6 June 2019</li>
+              <li><em>Sunsets</em> | 6 June 2019</li>
             </a>
           </ul>
           <a href="."> </a>
-        </article>
+        </section>
+        <section class="project-portal">
+          <h2>Check out my work</h2>
+          <ul class="portal-links">
+            <a href="./pages/projects.html">Maths Tools</a>
+            <a href="./pages/projects.html">Science Tools</a>
+            <a href="./pages/projects.html">Music Theory Tools</a>
+          </ul>
+        </section>
       </article>
     </main>
     <!-- The footer ...  -->

@@ -1,34 +1,65 @@
 /* The ... element ...  */
 
 /* .projects { */
-  /* background-color: var(--background5); */
-  /* border-radius: 0 60px 0 60px; */
-  /* padding: 12px;
+/* background-color: var(--background5); */
+/* border-radius: 0 60px 0 60px; */
+/* padding: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap; */
-  /* width: 90%;
+/* width: 90%;
   max-width: 500px; */
 /* } */
 
 /* .projects:hover { */
-  /* background-color: var(--background6); */
+/* background-color: var(--background6); */
 /* } */
 
-.project-snapshot {
+.intro-text {
+  margin: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  background: var(--background6);
+  border-radius: 24px;
+  max-width: 50%;
+}
+
+.intro-text h1 {
+  color: var(--background3);
+}
+
+.intro-text p {
+  color: var(--background3);
+}
+
+.intro img {
+  margin: 12px;
+  padding: 12px;
+  /* max-width: 600px; */
+
+  width: 1000px;
+  /* max-width: 50%; */
+
+  /* max-height: 600px; */
+  /* height: 600px; */
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+/* .project-snapshot {
   background-color: var(--background4);
   padding: 24px;
   margin: 12px;
-  /* border-radius: 0 48px 0 48px; */
   border-radius: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: 420px;
-}
-
+} */
+/* 
 .project-snapshot:hover {
   background-color: var(--background6);
 }
@@ -40,9 +71,10 @@
 
 .project-snapshot:hover > h3 {
   color: var(--background3);
-}
+} */
 
 .snapshot-image {
+  margin: 12px;
   border-radius: 24px;
   width: 100%;
   max-width: 400px;
@@ -52,40 +84,101 @@
   box-shadow: 0px 0px 8px 8px var(--background4);
 }
 
-
+.portals {
+  padding: 12px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .project-portal {
   margin: 12px;
   padding: 12px;
+  /* text-decoration: none; */
+  background: var(--background6);
+  border-radius: 24px;
+  /* color: var(--background3); */
 }
 
-.project-portal h3 {
+.project-portal h2 {
   padding: 12px;
+  text-align: center;
+  /* color: var(--background6); */
 }
+
+.portal-links {
+  padding: 12px;
+  margin: 12px;
+}
+
+.portal-links a {
+  margin: 12px;
+  padding: 12px;
+  text-decoration: none;
+  background: var(--background6);
+  border: 1px solid var(--background3);
+  border-radius: 24px;
+  color: var(--background3);
+}
+
+.portal-links a:hover {
+  background: var(--background3);
+  color: var(--background6);
+}
+
+/* visited links - make not purple? */
 
 .blog-portal {
   margin: 12px;
   padding: 12px;
+  text-align: center;
+  background: var(--background6);
+  border-radius: 24px;
+  color: var(--background3);
 }
 
-.blog-portal h3 {
+.blog-portal h2 {
   padding: 12px;
+  /* color: var(--background6); */
+}
+
+.blog-portal ul {
+  padding: 0 12px 12px;
+  margin: 12px;
+  text-align: start;
+}
+
+.blog-portal ul a {
+  text-decoration: none;
+}
+
+.blog-portal ul a:hover {
+  /* font-weight: bold; */
+  text-decoration: underline;
+}
+
+.blog-portal ul a:visited {
+  color: inherit;
 }
 
 /* Media breakpoint for tablets */
-/* @media screen and (min-width: 576px) and (max-width: 991.98) {
-
-} */
+@media screen and (min-width: 576px) and (max-width: 991.98) {
+}
 
 /* Media breakpoint for desktops */
 
-/* @media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
 
-  .projects {
+.intro {
+  flex-direction: row;
+  /* ^^ redundant? */
+}
+
+  .portals {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1500px;
-  } */
-
+  }
 }
