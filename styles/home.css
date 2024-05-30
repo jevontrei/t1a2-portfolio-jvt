@@ -1,164 +1,86 @@
 /* The ... element ...  */
 
-/* .projects { */
-/* background-color: var(--background5); */
-/* border-radius: 0 60px 0 60px; */
-/* padding: 12px;
+.intro-and-photo {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap; */
-/* width: 90%;
-  max-width: 500px; */
-/* } */
-
-/* .projects:hover { */
-/* background-color: var(--background6); */
-/* } */
-
-.intro-text {
-  margin: 12px;
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  background: var(--background6);
-  border-radius: 24px;
-  max-width: 50%;
+  align-items: center;
+  padding: 0 0 12px;
 }
 
-.intro-text h1 {
-  color: var(--background3);
-}
-
-.intro-text p {
-  color: var(--background3);
-}
-
-.intro img {
-  margin: 12px;
-  padding: 12px;
-  /* max-width: 600px; */
-
-  width: 1000px;
-  /* max-width: 50%; */
-
-  /* max-height: 600px; */
-  /* height: 600px; */
+.intro-and-photo img {
+  margin: 12px 12px 0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  box-shadow: 0 0 4px var(--background3);
   overflow: hidden;
   border-radius: 24px;
 }
 
-/* .project-snapshot {
-  background-color: var(--background4);
-  padding: 24px;
-  margin: 12px;
-  border-radius: 24px;
+.intro {
+  margin: 12px 0 12px;
+  padding: 12px 0 12px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 420px;
-} */
-/* 
-.project-snapshot:hover {
-  background-color: var(--background6);
-}
-
-.project-snapshot h3 {
-  padding-bottom: 24px;
-  color: var(--background6);
-}
-
-.project-snapshot:hover > h3 {
-  color: var(--background3);
-} */
-
-.snapshot-image {
-  margin: 12px;
+  background: var(--logo-color);
   border-radius: 24px;
+  height: fit-content;
   width: 100%;
-  max-width: 400px;
+  box-shadow: 0 0 4px var(--background3);
 }
 
-.snapshot-image:hover {
-  box-shadow: 0px 0px 8px 8px var(--background4);
+.intro h1 {
+  margin: 0 12px 0;
+  padding: 0 12px 0;
+  font-size: xx-large;
+  color: var(--background3);
 }
 
-.portals {
-  padding: 12px;
+.intro p {
+  color: var(--background3);
+  /* font-size: 20px; */
   margin: 12px;
+  padding: 12px;
+}
+
+.both-portals {
+  padding: 0 0 12px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.project-portal {
-  margin: 12px;
-  padding: 12px;
-  /* text-decoration: none; */
-  background: var(--background6);
-  border-radius: 24px;
-  /* color: var(--background3); */
-}
-
-.project-portal h2 {
-  padding: 12px;
+.portal {
+  margin: 12px 0 12px;
+  padding: 0 0 12px;
   text-align: center;
-  /* color: var(--background6); */
-}
-
-.portal-links {
-  padding: 12px;
-  margin: 12px;
-}
-
-.portal-links a {
-  margin: 12px;
-  padding: 12px;
-  text-decoration: none;
-  background: var(--background6);
-  border: 1px solid var(--background3);
+  background: var(--logo-color);
   border-radius: 24px;
+  box-shadow: 0 0 4px var(--background3);
   color: var(--background3);
+  width: 100%;
 }
 
-.portal-links a:hover {
-  background: var(--background3);
-  color: var(--background6);
-}
-
-/* visited links - make not purple? */
-
-.blog-portal {
-  margin: 12px;
-  padding: 12px;
+.portal h2 {
+  padding-top: 20px;
   text-align: center;
-  background: var(--background6);
-  border-radius: 24px;
-  color: var(--background3);
 }
 
-.blog-portal h2 {
-  padding: 12px;
-  /* color: var(--background6); */
-}
-
-.blog-portal ul {
-  padding: 0 12px 12px;
-  margin: 12px;
+.portal ul {
+  padding: 12px 12px 12px 24px;
+  margin: 0 12px 0;
   text-align: start;
 }
 
-.blog-portal ul a {
+.portal ul a {
   text-decoration: none;
 }
 
-.blog-portal ul a:hover {
-  /* font-weight: bold; */
+.portal ul a:hover {
   text-decoration: underline;
 }
 
-.blog-portal ul a:visited {
+.portal ul a:visited {
   color: inherit;
 }
 
@@ -167,15 +89,30 @@
 }
 
 /* Media breakpoint for desktops */
-
 @media screen and (min-width: 992px) {
+  .intro-and-photo {
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* ^^ redundant? */
+  }
 
-.intro {
-  flex-direction: row;
-  /* ^^ redundant? */
-}
+  .intro-and-photo img {
+    max-width: 300px;
+    max-height: 300px;
+    aspect-ratio: 1 / 1;
+    /* ^^ it's still not square ... squished inwards */
+  }
 
-  .portals {
+  .intro {
+    height: 300px;
+    max-width: 60%;
+  }
+
+  .intro p {
+    font-size: 20px;
+  }
+
+  .both-portals {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
