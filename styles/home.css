@@ -72,15 +72,15 @@
   text-align: start;
 }
 
-.portal ul a {
+.portal ul li a {
   text-decoration: none;
 }
 
-.portal ul a:hover {
+.portal ul li a:hover {
   text-decoration: underline;
 }
 
-.portal ul a:visited {
+.portal ul li a:visited {
   color: inherit;
 }
 
