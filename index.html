@@ -21,16 +21,16 @@
   <body>
     <!-- The header ...  -->
     <header>
-      <!-- The logo ... -->
+      <!-- The navigation menu ...  -->
+      <!-- The logo ... acts as a home button while avoiding redundancy -->
       <a href="#">
         <img class="logo" src="./images/JVT2-GPT.png" alt="JVT logo; square" />
       </a>
-      <!-- The navigation menu ...  -->
       <nav>
-        <a href="#">Home</a>
-        <a href="./pages/about.html">About</a>
-        <a href="./pages/projects.html">Projects</a>
-        <a href="./pages/contact.html">Contact</a>
+        <!-- <a href="#">Home</a> -->
+        <a class="nav-button" href="./pages/about.html">About</a>
+        <a class="nav-button" href="./pages/projects.html">Projects</a>
+        <a class="nav-button" href="./pages/contact.html">Contact</a>
       </nav>
     </header>
     <!-- The main element ...  -->
@@ -39,21 +39,24 @@
       <article class="intro-and-photo">
         <section class="intro">
           <br />
-          <h1>Hello! I'm Joel.</h1>
+          <h1>Hi! I'm Joel.</h1>
           <p>
             I'm a developer interested in building software tools for science,
             maths and music. I have experience in software development,
-            materials science research and music. This website is where I
-            showcase my favourite projects, where I describe my life to date,
-            and where I can think out loud via my blog.
+            materials science research, music, and teaching. This website is
+            where I showcase my favourite projects, describe my life to date,
+            and think out loud via my blog.
           </p>
+          <!-- <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tempore deserunt doloremque, eveniet similique reprehenderit error voluptatum commodi, expedita quasi perferendis sed itaque pariatur accusantium voluptates odit aspernatur fugit id?
+          </p> -->
         </section>
         <img src="./images/me-cropped.png" alt="A portrait of me; square?" />
       </article>
       <!-- .....e.g. Graphical Component 1: Snapshots of ... some info ...  -->
-      <article class="both-portals">
-        <section class="portal">
-          <h2>Read my blog</h2>
+      <!-- <article class="both-portals"> -->
+      <!-- <section class="portal"> -->
+      <!-- <h2>Read my blog</h2>
           <ul>
             <li>
               <a href="./pages/blog/blog1.html">
@@ -82,8 +85,8 @@
             </li>
           </ul>
           <a href="."> </a>
-        </section>
-        <section class="portal">
+        </section> -->
+      <!-- <section class="portal">
           <h2>Check out my work</h2>
           <ul>
             <li>
@@ -96,24 +99,26 @@
               <a href="./pages/projects.html">Music Theory Tools</a>
             </li>
           </ul>
-        </section>
-      </article>
+        </section> -->
+      <!-- </article> -->
     </main>
     <!-- The footer ...  -->
     <footer>
-      <!-- Socilm media icons and links ...  -->
-      <div class="social-media">
-        <a
-          href="https://www.linkedin.com/in/joel-von-treifeldt/"
-          target="_blank"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/jevontrei" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
+      <!-- Social media icons and links ...  -->
+      <div class="socials-and-copyright">
+        <div class="socials">
+          <a
+            href="https://www.linkedin.com/in/joel-von-treifeldt/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/jevontrei" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <p>Joel von Treifeldt &copy; 2024</p>
       </div>
-      <p>Joel von Treifeldt &copy; 2024</p>
     </footer>
   </body>
 </html>

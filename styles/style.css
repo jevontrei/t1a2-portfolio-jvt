@@ -47,21 +47,36 @@ body {
 
 /* The header selector ... */
 header {
-  margin: 0 12px 0;
+  /* Margin-bottom is 9px because the logo <a> tag is adding 3px */
+  margin: 0 12px 9px;
   border-radius: 24px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+
+/* The navigation bar ...  */
+nav {
+  /* margin: 12px; */
+  font-size: 24px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  /* ^^ why not working on iPhone? */
+  /* column-gap: 12px; */
 }
 
 /* The ... */
 .logo {
-  margin: 0 0 12px;
-  border-radius: 24px;
+  margin: 0px 8px 0 0;
+  border-radius: 12px;
   box-shadow: 0 0 4px var(--background3);
-  width: 100%;
-  max-width: 300px;
+  width: 48px;
+  /* max-width: 300px; */
 }
 
 /* The :hover pseudoclass ...  */
@@ -69,30 +84,20 @@ header {
   opacity: 0.8;
 }
 
-/* The navigation bar ...  */
-nav {
-  margin: 12px;
-  font-size: 24px;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 16px;
-  row-gap: 16px;
-}
-
 /* The ... */
-nav a {
+.nav-button {
   padding: 8px;
+  margin: 0 0 0 16px;
   text-decoration: none;
   color: var(--background3);
   border-radius: 12px;
   box-shadow: 0 0 4px var(--background3);
   background: var(--logo-color);
+  height: 32px;
 }
 
 /* The ... */
-nav a:hover {
+.nav-button:hover {
   background: var(--background3);
   color: var(--background6);
 }
@@ -107,11 +112,11 @@ main {
 }
 
 footer {
-  /* margin: 12px; */
+  margin: 12px;
   /* padding: 12px; */
-  border-radius: 24px;
-  background: var(--logo-color);
-  box-shadow: 0 0 4px var(--background3);
+  /* border-radius: 24px; */
+  /* background: var(--logo-color); */
+  /* box-shadow: 0 0 4px var(--background3); */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -119,71 +124,104 @@ footer {
   align-items: center;
 }
 
-footer p {
+.socials-and-copyright p {
   margin: 0 0 12px 0;
-  padding: 12px;
+  /* padding: 12px; */
   font-size: 20px;
   color: var(--background3);
 }
 
-.social-media {
-  margin: 12px 0 0 0;
-  padding: 12px;
+
+
+.socials-and-copyright {
+  /* border-radius: 24px; */
+  /* background: var(--logo-color); */
+  /* box-shadow: 0 0 4px var(--background3); */
+  /* margin: 12px 0 0 0; */
+  /* padding: 12px; */
 
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
   /* ^^ check iphone and maybe delet this or fix */
-  gap: 24px;
+  gap: 12px;
 }
 
-.social-media a i {
+.socials-and-copyright a i {
   color: var(--background3);
   font-size: 40px;
 }
 
-.social-media a i:hover {
+.socials-and-copyright a i:hover {
   font-weight: bold;
   font-size: 48px;
   /* color: var(--background6); */
 }
 
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
 /* Media breakpoint for tablets */
 @media screen and (min-width: 576px) /* and (max-width: 991.98) */ {
+  /* This max-midth keeps the elements the same width as the mobile max */
   header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 528px;
+  }
+
+  nav {
+    min-height: 100%;
+    max-height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0;
     align-items: flex-start;
   }
 
-  .logo-and-name {
-    max-width: 49%;
-  }
-
-  nav {
-    /* width: 50%; */
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    max-width: 49%;
-    height: 100%;
+  nav a {
+    margin: 12px;
   }
 
   main {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
   }
 }
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
 /* Media breakpoint for desktops */
 @media screen and (min-width: 992px) {
+  header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .logo {
+    /* width: 300px; */
+  }
+
   nav {
+    margin: 0;
     flex-direction: row;
   }
 
-  .intro {
-    flex-direction: row;
+  nav a {
+    margin: 0 0 0 16px;
   }
 }

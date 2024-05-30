@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 0 12px;
+  /* padding: 0 0 12px; */
 }
 
 .intro-and-photo img {
@@ -12,20 +12,21 @@
   width: 100%;
   aspect-ratio: 1 / 1;
   box-shadow: 0 0 4px var(--background3);
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 24px;
 }
 
 .intro {
-  margin: 12px 0 12px;
-  padding: 12px 0 12px;
+  margin: 12px 0 0;
+  padding: 12px 0 0;
   display: flex;
   flex-direction: column;
-  background: var(--logo-color);
+  /* background: var(--logo-color); */
   border-radius: 24px;
   height: fit-content;
   width: 100%;
-  box-shadow: 0 0 4px var(--background3);
+  order: 2
+  /* box-shadow: 0 0 4px var(--background3); */
 }
 
 .intro h1 {
@@ -33,12 +34,14 @@
   padding: 0 12px 0;
   font-size: xx-large;
   color: var(--background3);
+  text-align: center;
 }
 
 .intro p {
   color: var(--background3);
   margin: 12px;
   padding: 12px;
+  font-size: 28px;
 }
 
 .both-portals {
@@ -53,15 +56,16 @@
   margin: 12px 0 12px;
   padding: 0 0 12px;
   text-align: center;
-  background: var(--logo-color);
+  /* background: var(--logo-color); */
   border-radius: 24px;
-  box-shadow: 0 0 4px var(--background3);
+  /* box-shadow: 0 0 4px var(--background3); */
   color: var(--background3);
   width: 100%;
 }
 
 .portal h2 {
-  padding-top: 20px;
+  padding: 20px 0 0;
+  margin: 0 12px 0;
   text-align: center;
 }
 
@@ -85,37 +89,99 @@
 }
 
 /* Media breakpoint for tablets */
-@media screen and (min-width: 576px) and (max-width: 991.98) {
-}
-
-/* Media breakpoint for desktops */
-@media screen and (min-width: 992px) {
-  .intro-and-photo {
-    flex-direction: row;
-    justify-content: space-evenly;
-    /* ^^ redundant? */
-  }
-
-  .intro-and-photo img {
-    max-width: 300px;
-    max-height: 300px;
-    aspect-ratio: 1 / 1;
-    /* ^^ it's still not square ... squished inwards */
-  }
-
-  .intro {
-    height: 300px;
-    max-width: 60%;
+@media screen and (min-width: 576px) /* and (max-width: 991.98) */ {
+  .intro h1 {
+    text-align: start;
   }
 
   .intro p {
-    font-size: 20px;
+    font-size: 28px;
+  }
+
+  /* This max-midth keeps the photo the same width as the mobile max */
+  .intro-and-photo img {
+    max-width: 528px;
   }
 
   .both-portals {
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    gap: 24px;
+  }
+
+  .portal {
+    width: fit-content;
+  }
+
+  .portal h2 {
+    text-align: start;
+    padding: 20px 12px 0;
+  }
+
+  .portal ul {
+    padding: 12px 12px 12px 36px;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* Media breakpoint for desktops */
+@media screen and (min-width: 992px) {
+  main {
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* gap: 24px; */
+    /* width: 100%; */
+    /* flex-wrap: wrap; */
+  }
+
+  .intro-and-photo {
+    /* padding: 0; */
+    flex-direction: row;
+    /* flex-wrap: wrap; */
     justify-content: center;
-    max-width: 1500px;
+    align-items: center;
+  }
+
+  .intro-and-photo img {
+    margin: 24px;
+    /* order: 1; */
+  }
+
+  .intro {
+    height: fit-content;
+    margin-right: 24px;
+    max-width: 50%;
+    /* min-height: 494px; */
+    /* max-width: 924px; */
+    /* order: 2; */
+  }
+
+  .both-portals {
+    flex-direction: row;
+    /* justify-content: end; */
+    width: fit-content;
+    /* width: 400px; */
+    gap: 0;
+  }
+
+  .portal {
+    /* width: 372px; */
+    
+  }
+
+  .portal ul li {
+    font-size: 20px;
+
   }
 }
