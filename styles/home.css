@@ -74,6 +74,7 @@
 
 .portal ul li a {
   text-decoration: none;
+  color: black;
 }
 
 .portal ul li a:hover {
