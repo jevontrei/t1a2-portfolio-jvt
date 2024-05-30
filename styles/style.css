@@ -131,6 +131,8 @@ footer p {
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  /* ^^ check iphone and maybe delet this or fix */
   gap: 24px;
 }
 
