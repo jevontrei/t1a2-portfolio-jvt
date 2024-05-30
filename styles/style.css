@@ -4,21 +4,20 @@
   padding: 0;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-  /* --background3: #002000; */
-  --background3: black;
-  /* --background4: #004000; */
-  --background4: #374f08;
-  --background5: #578718;
-  --background6: #dcffdc;
-  --gradient1: #93a967;
-  --gradient2: #c9be46;
-  --logo-color: #f1faea;
+  --text: black;
+  /* --other-color: brown; */
 }
 
 /* The body selector defines background color and mobile-first flex behaviour */
 body {
-  background: rgb(251, 255, 212);
+  /* background: rgb(251, 255, 212); */
+  /* ^^ i like this one */
+
+  /* background: pink; */
+
+  background-image: url(../images/forest.png);
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
 
   /* background: linear-gradient(
     to left bottom,
@@ -32,46 +31,29 @@ body {
     var(--background5)
   ); */
 
-  /* color: var(--background3); */
+  /* color: var(--text); */
   /* ^^ undersdtand and fix this font color / global or not? */
   /* margin: 12px; */
   padding: 24px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   min-height: 100dvh;
 }
 
 /* The header selector ... */
 header {
-  /* Margin-bottom is 9px because the logo <a> tag is adding 3px */
-  margin: 0 12px 9px;
-  border-radius: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* padding: 12px; */
   width: 100%;
 }
-
-/* The logo ... */
-/* .logo {
-  margin: 0px 8px 0 0;
-  border-radius: 12px;
-  box-shadow: 0 0 4px var(--background3);
-  width: 31px;
-} */
-
-/* The :hover pseudoclass ...  */
-/* .logo img:hover {
-  opacity: 0.8;
-} */
 
 /* The navigation bar ...  */
 nav {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 4px;
   row-gap: 12px;
@@ -80,11 +62,12 @@ nav {
 
 /* The ... */
 nav a {
-  padding: 8px;
-  color: black;
+  padding: 0 8px 8px 8px;
+  color: var(--text);
   text-decoration: none;
-  border: 1px solid black;
-  border-radius: 12px;
+  border-bottom: 1px solid black;
+  /* border: 1px solid black; */
+  /* border-radius: 12px; */
   /* box-shadow: 0 0 4px var(--background3); */
   height: fit-content;
   font-size: 16px;
@@ -93,7 +76,8 @@ nav a {
 /* The ... */
 nav a:hover {
   /* background: var(--background3); */
-  color: var(--background6);
+  /* color: var(--background6); */
+  border: none;
 }
 
 /* The ... */
@@ -111,7 +95,6 @@ footer {
   align-items: center;
 }
 
-
 .socials-and-copyright {
   display: flex;
   flex-direction: column;
@@ -119,7 +102,7 @@ footer {
   flex-wrap: wrap;
   /* ^^ check iphone and maybe delet this or fix */
   gap: 12px;
-  padding-top: 16px;
+  padding: 24px 0 12px;
 }
 
 .socials-and-copyright p {
@@ -127,7 +110,7 @@ footer {
 }
 
 .socials-and-copyright a i {
-  color: black;
+  color: var(--text);
   font-size: 40px;
   padding: 4px;
 }
@@ -146,15 +129,6 @@ footer {
 
 /* Media breakpoint for tablets */
 @media screen and (min-width: 576px) /* and (max-width: 991.98) */ {
-  /* This max-midth keeps the elements the same width as the mobile max */
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 528px;
-  }
-
   nav {
     min-height: 100%;
     max-height: 100%;
@@ -166,6 +140,7 @@ footer {
 
   nav a {
     margin: 12px;
+    font-size: 20px;
   }
 
   main {
@@ -186,13 +161,10 @@ footer {
 /* Media breakpoint for desktops */
 @media screen and (min-width: 992px) {
   header {
+    padding: 12px;
     width: 100%;
     justify-content: space-between;
     align-items: start;
-  }
-
-  .logo {
-    /* width: 300px; */
   }
 
   nav {
@@ -202,5 +174,6 @@ footer {
 
   nav a {
     margin: 0 0 0 16px;
+    font-size: 24px;
   }
 }

@@ -19,8 +19,6 @@
   /* border-radius: 0 64px 0 64px; */
   border-radius: 24px;
   width: 500px;
-  color: var(--background3);
-  background-color: var(--background5);
   padding: 24px;
 }
 
@@ -29,8 +27,6 @@
 }
 
 .tool {
-  background-color: var(--background4);
-  color: var(--background6);
   /* border-radius: 0 48px 0 48px; */
   border-radius: 24px;
   margin: 24px;
@@ -67,6 +63,11 @@
 
 .snapshot-image:hover {
   box-shadow: 0px 0px 8px 8px var(--background4);
+}
+
+.blog-portal {
+  background-color: red;
+  height: 200px;
 }
 
 @media screen {

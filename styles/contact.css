@@ -11,8 +11,6 @@ main h2 {
 .contact-form {
   margin: 24px;
   padding: 32px;
-  background-color: var(--background5);
-  /* border-radius: 0 48px 0 48px; */
   border-radius: 24px;
   display: flex;
   flex-direction: column;
@@ -50,9 +48,7 @@ main h2 {
 #submit {
   height: 48px;
   width: 120px;
-  background-color: var(--background4);
   border-radius: 8px;
-  color: var(--background6);
   font-size: 20px;
   padding: 8px;
 }
@@ -66,6 +62,8 @@ main h2 {
 
 #direct address a {
   font-style: normal;
+  color: black;
+
 }
 
 @media screen {
