@@ -1,21 +1,14 @@
-* {
-  box-sizing: border-box;
+body {
+  /* background-image: url(../images/forest2.png);
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+  background-size: auto;
+  background-repeat: no-repeat; */
 }
 
-/* The ...  */
+/* The intro ... */
 .intro {
-  margin: 12px;
   padding: 12px;
-  width: 100%;
-  height: fit-content;
-}
-
-.intro p {
-  margin: 0 12px 0;
-  padding: 0 12px 0;
-  width: 100%;
-  text-align: justify;
-  font-size: 24px;
 }
 
 .experiences-both {
@@ -25,36 +18,38 @@
 }
 
 .experience {
-  margin: 12px 24px;
-  padding: 24px 24px 0px;
+  margin: 20px 24px;
+  padding: 32px 24px 0px;
+  width: 100%;
+  height: fit-content;
+  border-top: 1px solid black;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 90%; */
-  /* width: 576px; */
-  height: fit-content;
 }
 
-.experience h2 {
-  margin-bottom: 24px;
+h2 {
+  margin-bottom: 12px;
 }
 
 .item-date {
-  min-width: 200px;
-  max-width: 200px;
-  max-height: 24px;
+  /* padding: 12px 0 4px; */
+  padding-top: 12px;
+  /* border-bottom: 1px solid black; */
+
   display: flex;
   justify-content: center;
-  padding: 4px;
 }
 
 .item-details {
+  margin-bottom: 12px 0 12px;
+  padding: 12px 0;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 24px;
-  padding: 12px 0;
-  width: 100%;
 }
 
 .item-details a {
@@ -66,38 +61,52 @@
   text-decoration: none;
 }
 
+.resume-container {
+  width: 100%;
+
+  display: flex;
+}
+
+.employment {
+  margin-top: 0;
+}
+
 .resume {
+  margin: 0 24px;
+  padding: 32px 24px 20px;
   font-size: 24px;
   width: 100%;
   height: fit-content;
-  padding: 24px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #resume-link {
+  color: black;
+  text-decoration: none;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  color: black;
-  text-decoration: none;
 }
 
-#resume-link p {
-  padding: 12px;
+#resume-link h2 {
+  /* padding: 12px; */
 }
 
 #resume-link:hover {
-  text-decoration: none;
-  color: white;
-
+  text-decoration: underline;
+  /* color: white; */
   /* font-weight: bold; */
 }
 
 .fa-regular {
-  padding: 12px;
+  padding: 0 12px 12px;
   font-size: 32px;
 }
 
@@ -107,6 +116,9 @@
 
 /* Media breakpoint for tablets */
 @media screen and (min-width: 576px) {
+  .experiences-both {
+    /* flex-direction: row; */
+  }
 }
 
 /* Media breakpoint for desktops */
