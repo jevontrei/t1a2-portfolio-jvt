@@ -1,37 +1,38 @@
-/* The ... element ...  */
+* {
+  box-sizing: border-box;
+}
 
+/* The ...  */
 .intro {
   margin: 12px;
   padding: 12px;
-  border-radius: 24px;
+  width: 100%;
   height: fit-content;
+}
+
+.intro p {
+  margin: 0 12px 0;
+  padding: 0 12px 0;
+  width: 100%;
+  text-align: justify;
+  font-size: 24px;
 }
 
 .experiences-both {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.column {
-  display: flex;
   flex-direction: column;
-  margin: 12px 24px;
-  width: 576px;
   align-items: center;
 }
 
 .experience {
-  display: flex;
-  flex-direction: column;
   margin: 12px 24px;
   padding: 24px 24px 0px;
-  border-radius: 24px;
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 90%; */
+  /* width: 576px; */
   height: fit-content;
-}
-
-.experience:hover {
-  /* background-color: var(--background6); */
 }
 
 .experience h2 {
@@ -42,9 +43,6 @@
   min-width: 200px;
   max-width: 200px;
   max-height: 24px;
-  /* border-radius: 16px 16px 0px 0px; */
-  border-radius: 24px;
-
   display: flex;
   justify-content: center;
   padding: 4px;
@@ -56,9 +54,6 @@
   align-items: center;
   margin-bottom: 24px;
   padding: 12px 0;
-  /* border-radius: 0px 48px 0px; */
-  border-radius: 24px;
-
   width: 100%;
 }
 
@@ -69,22 +64,16 @@
 
 .item-details a:hover {
   text-decoration: none;
-  font-weight: bold;
 }
 
 .resume {
   font-size: 24px;
-  /* border-radius: 0px 48px 0px; */
-  border-radius: 24px;
-
-  width: fit-content;
+  width: 100%;
   height: fit-content;
   padding: 24px;
-  margin: 48px;
-}
-
-.resume:hover {
-  /* background-color: var(--background6); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #resume-link {
@@ -102,7 +91,9 @@
 
 #resume-link:hover {
   text-decoration: none;
-  font-weight: bold;
+  color: white;
+
+  /* font-weight: bold; */
 }
 
 .fa-regular {
@@ -110,36 +101,21 @@
   font-size: 32px;
 }
 
-/* @keyframes {
-
-} */
-
-/* @media screen and (min-width: 576px) { */
-main {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* align-items: center; */
+@keyframes {
+  /*  */
 }
 
-.experiences-both {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
+/* Media breakpoint for tablets */
+@media screen and (min-width: 576px) {
 }
 
-.column {
+/* Media breakpoint for desktops */
+@media screen and (min-width: 992px) {
+  .experiences-both {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .academia {
+    border-right: 1px solid black;
+  }
 }
-
-.experience {
-  /* width: 50%; */
-}
-
-/* #employment {
-    width: 100%;
-  } */
-
-.employment-and-resume {
-  /* width: 50%; */
-}
-
-/* } */

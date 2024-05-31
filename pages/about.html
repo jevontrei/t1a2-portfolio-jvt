@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joel von Treifeldt</title>
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/about.css" />
     <link rel="icon" href="../images/JVT2-GPT.png" />
     <link
       rel="stylesheet"
@@ -14,8 +12,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
   </head>
   <body>
+    <!-- The header contains the navigation menu  -->
     <header>
       <nav>
         <a href="../index.html">Home</a>
@@ -26,6 +27,11 @@
     </header>
     <main>
       <section class="intro">
+        <p>
+          Right now I'm pursuing software skills. I'm learning HTML,
+          CSS, JavaScript and Python, among other things.
+        </p>
+        <br />
         <p>
           As a teenager, I was a hobby musician and music teacher. Then I became
           a professional musician in 2021, performing (mostly jazz) and
@@ -38,88 +44,77 @@
         </p>
         <br />
         <p>
-          Most recently I've been pursuing software skills. I'm learning HTML,
-          CSS, JavaScript and Python, among other things.
-        </p>
-        <br />
-        <p>
           I love learning, exploring, teaching and making things. I'm interested
-          in many topics like music, science, programming, technology, AI,
+          in many topics: music, science, programming, technology, AI,
           philosophy, psychology, languages and meditation. You could say I
           secretly want to be a cognitive scientist.
         </p>
       </section>
-      <article class="experiences-both">
-        <section class="column">
-          <article class="experience">
-            <h2>Academia</h2>
-            <h3 class="item-date">2024 - present</h3>
-            <section class="item-details">
-              <p>Diploma of Information Technology</p>
-              <p>Full Stack Web Development</p>
-              <p>Coder Academy</p>
-            </section>
-            <h3 class="item-date">2020 - 2021</h3>
-            <section class="item-details">
-              <p>Graduate Certificate in Research Studies</p>
-              <p>Materials Science</p>
-              <p>Inorganic Nanomaterials Laboratory</p>
-              <p>Queensland University of Technology</p>
-            </section>
-            <h3 class="item-date">2021</h3>
-            <section class="item-details">
-              <p>First-Author Publication</p>
-              <p>Journal: Materials & Design</p>
-              <!-- ^^ change this line in resume file too -->
-              <a
-                href="https://doi.org/10.1016/j.matdes.2020.109403"
-                target="_blank"
-                >https://doi.org/10.1016/j.matdes.2020.109403
-              </a>
-            </section>
-            <h3 class="item-date">2014 - 2019</h3>
-            <section class="item-details">
-              <p>Bachelor of Science</p>
-              <p>Physics (First Class Honours)</p>
-              <!-- ^^ review all italics etc -->
-              <p>Minors: Mechanical Engineering, Discrete Mathematics</p>
-              <p>Queensland University of Technology</p>
-            </section>
-          </article>
-        </section>
-        <section class="column">
-          <article class="experience">
-            <h2>Employment</h2>
-            <h3 class="item-date">2023 - present</h3>
-            <section class="item-details">
-              <p>Bus Operator</p>
-              <p>Brisbane City Council</p>
-            </section>
-            <h3 class="item-date">2021 - present</h3>
-            <section class="item-details">
-              <p>Music Educator and Performer</p>
-              <p>JVT Music</p>
-            </section>
-            <h3 class="item-date">2021</h3>
-            <section class="item-details">
-              <p>Sessional Academic</p>
-              <p>Laboratory Demonstrator</p>
-              <p>Queensland University of Technology</p>
-            </section>
-          </article>
-          <section class="resume">
-            <a id="resume-link" href="../JVT_Resume.pdf" target="_blank">
-              <i class="fa-regular fa-file"></i>
-              <p>See my resume!</p>
+      <section class="experiences-both">
+        <article class="experience academia">
+          <h2>Academia</h2>
+          <h3 class="item-date">2024 - present</h3>
+          <section class="item-details">
+            <p>Diploma of Information Technology</p>
+            <p>Full Stack Web Development</p>
+            <p>Coder Academy</p>
+          </section>
+          <h3 class="item-date">2020 - 2021</h3>
+          <section class="item-details">
+            <p>Graduate Certificate in Research Studies</p>
+            <p>Materials Science</p>
+            <p>Inorganic Nanomaterials Laboratory</p>
+            <p>Queensland University of Technology</p>
+          </section>
+          <h3 class="item-date">2021</h3>
+          <section class="item-details">
+            <p>First-Author Publication</p>
+            <p>Journal: Materials & Design</p>
+            <a
+              href="https://doi.org/10.1016/j.matdes.2020.109403"
+              target="_blank"
+              >https://doi.org/10.1016/j.matdes.2020.109403
             </a>
           </section>
-        </section>
-      </article>
+          <h3 class="item-date">2014 - 2019</h3>
+          <section class="item-details">
+            <p>Bachelor of Science</p>
+            <p>Physics (First Class Honours)</p>
+            <!-- ^^ review all italics etc -->
+            <p>Minors: Mechanical Engineering, Discrete Mathematics</p>
+            <p>Queensland University of Technology</p>
+          </section>
+        </article>
+        <article class="experience employment">
+          <h2>Employment</h2>
+          <h3 class="item-date">2023 - present</h3>
+          <section class="item-details">
+            <p>Bus Operator</p>
+            <p>Brisbane City Council</p>
+          </section>
+          <h3 class="item-date">2021 - present</h3>
+          <section class="item-details">
+            <p>Music Educator and Performer</p>
+            <p>JVT Music</p>
+          </section>
+          <h3 class="item-date">2021</h3>
+          <section class="item-details">
+            <p>Sessional Academic</p>
+            <p>Laboratory Demonstrator</p>
+            <p>Queensland University of Technology</p>
+          </section>
+        </article>
+      </section>
+      <section class="resume">
+        <a id="resume-link" href="../JVT_Resume.pdf" target="_blank">
+          <i class="fa-regular fa-file"></i>
+          <p>See my resume!</p>
+        </a>
+      </section>
     </main>
     <footer>
       <!-- Social media icons and links ...  -->
       <div class="socials-and-copyright">
-        <!-- ^ delete this div and fix in all css files -->
         <div class="socials">
           <a
             href="https://www.linkedin.com/in/joel-von-treifeldt/"
