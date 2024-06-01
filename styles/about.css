@@ -9,15 +9,6 @@ body {
 /* The intro ... */
 .intro {
   padding: 12px;
-  /* display: block; */
-  /* overflow-wrap: break-word; */
-}
-
-.intro p {
-  /* font-size: 16px; */
-  /* width: auto; */
-  /* display: block; */
-  /* overflow-wrap: break-word; */
 }
 
 .experiences-both {
@@ -57,15 +48,20 @@ h2 {
   margin-bottom: 12px 0 12px;
   padding: 4px 0;
   width: 100%;
+  /* word-wrap: break-word; */
+  /* word-break: break-word; */
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .item-details a {
   margin-bottom: 8px;
   color: black;
+  /* word-wrap: break-word; */
+  word-break: break-word;
 }
 
 .item-details a:hover {
@@ -130,6 +126,11 @@ h2 {
   .experiences-both {
     /* flex-direction: row; */
   }
+
+  .resume {
+    margin: 0;
+
+  }
 }
 
 /* Media breakpoint for desktops */
@@ -155,7 +156,7 @@ h2 {
 
   .employment {
     margin-left: 0;
-    padding-left: 0;
+    /* padding-left: 0; */
   }
 
   .resume {

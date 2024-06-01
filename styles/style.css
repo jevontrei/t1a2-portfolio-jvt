@@ -9,9 +9,11 @@
 /* The body selector defines background color and mobile-first flex behaviour */
 body {
   padding: 24px;
-  background-image: url(../images/forest1.png);
+
+  background-image: url(../../images/forest1.png);
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten;
+
   /* background-size: auto; */
   /* background-repeat: no-repeat; */
   min-height: 100dvh;
@@ -58,7 +60,7 @@ nav a:focus  */ {
 /* The main ... */
 main {
   width: 100%;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -82,7 +84,6 @@ main {
   /* height: fit-content; */
   width: 100%;
   max-width: 100%;
-
 }
 
 h1 {
@@ -137,7 +138,7 @@ footer {
 }
 
 .socials-and-copyright a i:hover {
-  color: white;
+  color: gray;
 }
 
 .socials {
@@ -162,6 +163,11 @@ footer {
     margin: 12px;
     font-size: 20px;
   }
+
+  .intro p {
+    font-size: 24px;
+    text-align: justify;
+  }
 }
 
 /* Media breakpoint for desktops */
@@ -182,6 +188,10 @@ footer {
 
   nav a {
     margin: 0 0 0 16px;
+    font-size: 24px;
+  }
+
+  .intro p {
     font-size: 24px;
   }
 }
