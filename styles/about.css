@@ -13,6 +13,7 @@ body {
 
 .experiences-both {
   width: 100%;
+  /* box-sizing: border-box; */
 
   display: flex;
   flex-direction: column;
@@ -20,14 +21,43 @@ body {
 }
 
 .experience {
-  margin: 20px 24px;
+  margin: 20px 24px 32px;
   padding: 32px 24px 0px;
-  width: 100%;
   height: fit-content;
+  width: 100%;
+  /* box-sizing: border-box; */
+
   border-top: 1px solid black;
 
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.resume-container {
+  width: 100%;
+  /* box-sizing: border-box; */
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.resume {
+  margin: 0 24px;
+  padding: 32px 24px 32px;
+  font-size: 24px;
+  height: fit-content;
+  width: 100%;
+  /* box-sizing: border-box; */
+/* 
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; */
+
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -36,9 +66,8 @@ h2 {
 }
 
 .item-date {
-  /* padding: 12px 0 4px; */
   padding-top: 16px;
-  /* border-bottom: 1px solid black; */
+  /* font-weight: bold; */
 
   display: flex;
   justify-content: center;
@@ -48,8 +77,6 @@ h2 {
   margin-bottom: 12px 0 12px;
   padding: 4px 0;
   width: 100%;
-  /* word-wrap: break-word; */
-  /* word-break: break-word; */
 
   display: flex;
   flex-direction: column;
@@ -60,7 +87,6 @@ h2 {
 .item-details a {
   margin-bottom: 8px;
   color: black;
-  /* word-wrap: break-word; */
   word-break: break-word;
 }
 
@@ -68,33 +94,14 @@ h2 {
   text-decoration: none;
 }
 
-.resume-container {
-  width: 100%;
-
-  display: flex;
-}
-
 .employment {
   margin-top: 0;
-}
-
-.resume {
-  margin: 0 24px;
-  padding: 32px 24px 20px;
-  font-size: 24px;
-  width: 100%;
-  height: fit-content;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #resume-link {
   color: black;
   text-decoration: none;
+  width: fit-content%;
 
   display: flex;
   flex-direction: column;
@@ -103,6 +110,7 @@ h2 {
 }
 
 #resume-link h2 {
+  margin: 0;
   /* padding: 12px; */
 }
 
@@ -129,7 +137,6 @@ h2 {
 
   .resume {
     margin: 0;
-
   }
 }
 
@@ -147,11 +154,11 @@ h2 {
   }
 
   .academia {
-    border-right: 1px solid black;
     margin-right: 0;
     margin-bottom: 8px;
     padding-right: 24px;
     padding-bottom: 32px;
+    border-right: 1px solid black;
   }
 
   .employment {
@@ -159,8 +166,12 @@ h2 {
     padding-top: 24px;
   }
 
-  .resume {
+  .resume-container {
     border: none;
+
+  }
+
+  .resume {
     /* padding: 20px; */
   }
 }

@@ -6,7 +6,7 @@
 
 /* The ... element ...  */
 .intro-and-photo {
-  padding: 12px;
+  margin: 20px;
 
   display: flex;
   flex-direction: column;
@@ -25,7 +25,8 @@
 /* Media breakpoint for tablets */
 @media screen and (min-width: 576px) {
   .intro-and-photo {
-    padding-top: 0;
+    margin: 0;
+    padding-top: 12px;
   }
 
   h1 {
@@ -43,18 +44,19 @@
 /* Media breakpoint for desktops */
 @media screen and (min-width: 992px) {
   .intro-and-photo {
-    padding-top: 16px;
+    padding-top: 0;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
   .photo {
-    margin: 24px;
+    margin: 12px;
   }
 
   .intro {
     margin: 24px;
+    /* margin-left: 0; */
     height: fit-content;
     max-width: 50%;
   }
@@ -62,6 +64,4 @@
   h1 {
     margin: 0;
   }
-
-
 }

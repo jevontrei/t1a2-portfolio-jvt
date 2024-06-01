@@ -25,30 +25,52 @@
       </nav>
     </header>
     <main>
-      <h1>Contact Me</h1>
-      <form class="contact-form">
-        <section class="form-item">
-          <label>Name:</label>
-          <input type="text" class="form-input" />
-        </section>
-        <section class="form-item">
-          <label>Email:</label>
-          <input type="text" class="form-input" />
-        </section>
-        <section class="form-item">
-          <label>Subject:</label>
-          <input type="text" class="form-input" />
-        </section>
-        <section class="form-item">
-          <label>Description:</label>
-          <textarea rows="8" class="form-input form-textarea"></textarea>
-        </section>
-        <div class="button">
-          <button id="submit">Submit</button>
+      <div class="contact">
+        <h1>Contact Me</h1>
+        <form class="contact-form">
+          <section class="form-item">
+            <label>Name:</label>
+            <input
+              type="text"
+              class="form-input"
+              name="full-name"
+              placeholder="Miles Davis"
+            />
+          </section>
+          <section class="form-item">
+            <label>Email:</label>
+            <input
+              type="text"
+              class="form-input"
+              name="email"
+              placeholder="milesdavis@gmail.com"
+            />
+          </section>
+          <section class="form-item">
+            <label>Subject:</label>
+            <input
+              type="text"
+              class="form-input"
+              name="subject"
+              placeholder="Your subject"
+            />
+          </section>
+          <section class="form-item">
+            <label>Message:</label>
+            <textarea
+              class="form-input form-input-textarea"
+              name="message"
+              rows="8"
+              placeholder="Your message"
+            ></textarea>
+          </section>
+        </form>
+        <div class="submit">
+          <button id="button">Submit</button>
         </div>
-      </form>
+      </div>
       <div id="direct">
-        <h4>Or get in touch directly:</h4>
+        <h2>Or get in touch directly:</h2>
         <p>+61 466 471 243</p>
         <address>
           <a href="mailto:jevontrei@gmail.com">jevontrei@gmail.com</a>

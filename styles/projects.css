@@ -1,72 +1,152 @@
-/* main {
-  display: flex;
-  flex-direction: column;
-} */
+/* The ... */
 
-/* !fix distance between h1 and navbar for this page */
+/* Delet this maybe: */
+body {
+  /* width: 100%; */
+}
+
+/* Delet this maybe: */
+main {
+  /* width: 100%; */
+}
+
+.intro {
+  padding: 12px 0 32px 0;
+}
 
 .all-projects {
+  width: 100%;
+
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 48px;
-  padding: 0 48px 48px;
 }
 
 .project {
+  padding: 32px 0 32px;
+  /* Check this: */
+  width: 100%;
+  border-top: 1px solid black;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-radius: 24px;
-  width: 500px;
-  padding: 24px;
 }
 
-.project:hover {
-  background-color: var(--);
+#music {
+  border-bottom: 1px solid black;
 }
 
-.tool {
-  border-radius: 24px;
-  margin: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 440px;
-}
+.tool-and-title {
+  padding: 12px;
+  width: 100%;
 
-.tool:hover {
-  /* background-color: var(--); */
-}
-
-.tool p {
-  padding: 16px;
-  font-size: 20px;
-}
-
-.tool:hover > p {
-  /* color: ; */
-}
-
-.tool a {
   display: flex;
   justify-content: center;
 }
 
-.snapshot-image {
-  margin: 8px 0 32px 0;
-  border-radius: 24px;
+.tool {
+  /* Check this: */
+  width: fit-content;
+  color: black;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.snapshot-image:hover {
+.tool p {
+  padding: 16px 0 4px;
+  font-size: 20px;
+}
+
+.tool:hover > p {
+  text-decoration: underline;
+}
+
+.tool-image {
+  border-radius: 24px;
+  /* Check this width: */
+  /* width: 100%; */
+
+  /* change this for desktop: */
+  max-width: 400px;
 }
 
 .blog-portal {
-  background-color: red;
-  height: 200px;
+  margin: 0 20px;
+  padding: 32px 20px;
+  width: 100%;
+  border-bottom: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen {
+#blog-link {
+  text-decoration: none;
+  color: black;
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#blog-link:hover {
+  text-decoration: underline;
+}
+
+.fa-solid {
+  padding: 0 12px 12px;
+  font-size: 32px;
+}
+
+@keyframes {
+  /*  */
+}
+
+/* Media breakpoint for tablets */
+@media screen and (min-width: 576px) {
+  .intro {
+    padding: 12px 24px 24px;
+  }
+}
+
+/* Media breakpoint for desktops */
+@media screen and (min-width: 992px) {
+  .all-projects {
+    /* margin: 0 24px 0; */
+    /* padding: 0 24px 0; */
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Check if this should only go in desktop: */
+    gap: 24px;
+  }
+
+  .project {
+    max-width: 400px;
+    border: none;
+  }
+
+  #music {
+    border: none;
+  }
+
+  .blog-portal {
+    border: none;
+  }
+
+  #blog-link {
+    margin: 24px;
+    padding: 24px 48px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
 }
