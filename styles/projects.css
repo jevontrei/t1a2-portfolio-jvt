@@ -1,17 +1,7 @@
 /* The ... */
-
-/* Delet this maybe: */
-body {
-  /* width: 100%; */
-}
-
-/* Delet this maybe: */
-main {
-  /* width: 100%; */
-}
-
 .intro {
-  padding: 12px 0 32px 0;
+  /* padding: 12px 0 32px 0; */
+  /* padding: 12px; */
 }
 
 .all-projects {
@@ -25,9 +15,10 @@ main {
 
 .project {
   padding: 32px 0 32px;
+
   /* Check this: */
   width: 100%;
-  border-top: 1px solid black;
+  /* border-top: 1px solid black; */
 
   display: flex;
   flex-direction: column;
@@ -35,23 +26,18 @@ main {
   align-items: center;
 }
 
+#maths,
+#science,
 #music {
-  border-bottom: 1px solid black;
-}
-
-.tool-and-title {
-  padding: 12px;
   width: 100%;
-
-  display: flex;
-  justify-content: center;
 }
 
 .tool {
-  /* Check this: */
-  width: fit-content;
-  color: black;
+  padding: 8px;
+
   text-decoration: none;
+  opacity: 0.9;
+  filter: grayscale(0.6);
 
   display: flex;
   flex-direction: column;
@@ -59,38 +45,49 @@ main {
   align-items: center;
 }
 
-.tool p {
-  padding: 16px 0 4px;
-  font-size: 20px;
+.tool:hover {
+  opacity: 1;
+  filter: grayscale(0);
 }
 
 .tool:hover > p {
   text-decoration: underline;
 }
 
+.tool p {
+  padding: 16px 0 4px;
+
+  font-size: 20px;
+}
+
 .tool-image {
   border-radius: 24px;
-  /* Check this width: */
-  /* width: 100%; */
+  width: 100%;
+  max-width: 300px;
+}
 
-  /* change this for desktop: */
-  max-width: 400px;
+.tool-image:hover {
+  opacity: 1;
+  filter: grayscale(0);
 }
 
 .blog-portal {
   margin: 0 20px;
   padding: 32px 20px;
+
   width: 100%;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
 #blog-link {
-  text-decoration: none;
-  color: black;
+  padding: 12px;
+
+  /* text-decoration: none; */
   width: fit-content;
 
   display: flex;
@@ -98,12 +95,38 @@ main {
   align-items: center;
 }
 
-#blog-link:hover {
+/* #blog-link:hover .fa-solid {
+  color: gray;
+} */
+
+/* #blog-link:hover #to-underline {
   text-decoration: underline;
+} */
+
+.blog-portal ul {
+  list-style-type: none;
+  font-size: 16px;
+
+  text-align: center;
+}
+
+.blog-portal ul li {
+}
+
+.blog-portal ul li a {
+  padding: 2px;
+
+  text-decoration: none;
+}
+
+.blog-portal ul li a:hover {
+  text-decoration: underline;
+  /* font-weight: bold; */
 }
 
 .fa-solid {
   padding: 0 12px 12px;
+
   font-size: 32px;
 }
 
@@ -114,39 +137,88 @@ main {
 /* Media breakpoint for tablets */
 @media screen and (min-width: 576px) {
   .intro {
-    padding: 12px 24px 24px;
+    padding: 12px 12px 32px;
+  }
+
+  .all-projects {
+    /* max-width: 500px; */
+  }
+
+  #maths,
+  #science,
+  #music {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .tool {
+    padding: 8px 0 8px;
+  }
+
+  .tool-image {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .blog-portal {
+    max-width: 500px;
+  }
+
+  .blog-portal ul {
+    list-style-type: none;
+    font-size: 18px;
   }
 }
 
 /* Media breakpoint for desktops */
 @media screen and (min-width: 992px) {
+  .intro {
+    padding: 12px;
+  }
+
   .all-projects {
     /* margin: 0 24px 0; */
     /* padding: 0 24px 0; */
 
+    max-width: 100%;
+
     flex-direction: row;
     flex-wrap: wrap;
     /* Check if this should only go in desktop: */
-    gap: 24px;
+    gap: 12px;
+    justify-content: space-evenly;
+  }
+
+  .tool {
+    padding: 8px;
+  }
+
+  .tool-image {
+    width: 100%;
+    max-width: 100%;
   }
 
   .project {
-    max-width: 400px;
-    border: none;
-  }
-
-  #music {
-    border: none;
+    width: 100%;
+    max-width: 300px;
+    /* border: none; */
   }
 
   .blog-portal {
-    border: none;
+    /* border: none; */
   }
 
-  #blog-link {
+  .blog-portal ul {
+    /* font-size: 20px; */
+  }
+
+  /* #blog-link {
     margin: 24px;
     padding: 24px 48px;
+
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-  }
+  } */
 }

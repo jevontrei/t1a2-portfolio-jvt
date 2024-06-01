@@ -1,3 +1,4 @@
+/* Delet: */
 body {
   /* background-image: url(../images/forest2.png);
   background-color: rgba(255, 255, 255, 0.7);
@@ -13,7 +14,6 @@ body {
 
 .experiences-both {
   width: 100%;
-  /* box-sizing: border-box; */
 
   display: flex;
   flex-direction: column;
@@ -22,42 +22,14 @@ body {
 
 .experience {
   margin: 20px 24px 32px;
-  padding: 32px 24px 0px;
+  padding: 24px 24px 0px;
   height: fit-content;
   width: 100%;
-  /* box-sizing: border-box; */
 
-  border-top: 1px solid black;
+  /* border-top: 1px solid black; */
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.resume-container {
-  width: 100%;
-  /* box-sizing: border-box; */
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
-}
-
-.resume {
-  margin: 0 24px;
-  padding: 32px 24px 32px;
-  font-size: 24px;
-  height: fit-content;
-  width: 100%;
-  /* box-sizing: border-box; */
-/* 
-  border-top: 1px solid black;
-  border-bottom: 1px solid black; */
-
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -86,7 +58,6 @@ h2 {
 
 .item-details a {
   margin-bottom: 8px;
-  color: black;
   word-break: break-word;
 }
 
@@ -98,8 +69,29 @@ h2 {
   margin-top: 0;
 }
 
+.resume-container {
+  width: fit-content;
+  /* border-top: 1px solid black;
+  border-bottom: 1px solid black; */
+
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.resume {
+  margin: 0;
+  padding: 32px 14px 44px;
+  font-size: 24px;
+  height: fit-content;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #resume-link {
-  color: black;
   text-decoration: none;
   width: fit-content%;
 
@@ -111,13 +103,14 @@ h2 {
 
 #resume-link h2 {
   margin: 0;
-  /* padding: 12px; */
 }
 
-#resume-link:hover {
+/* #resume-link:hover .fa-regular {
+  color: gray;
+} */
+
+#resume-link:hover #to-underline {
   text-decoration: underline;
-  /* color: white; */
-  /* font-weight: bold; */
 }
 
 .fa-regular {
@@ -132,46 +125,46 @@ h2 {
 /* Media breakpoint for tablets */
 @media screen and (min-width: 576px) {
   .experiences-both {
-    /* flex-direction: row; */
+    max-width: 500px;
   }
 
-  .resume {
-    margin: 0;
-  }
+
 }
 
 /* Media breakpoint for desktops */
 @media screen and (min-width: 992px) {
   .experiences-both {
+    max-width: 100%;
+
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
   }
 
   .experience {
-    border-top: none;
+    /* border-top: none; */
     max-width: 35%;
   }
 
   .academia {
-    margin-right: 0;
-    margin-bottom: 8px;
-    padding-right: 24px;
-    padding-bottom: 32px;
+    margin: 20px 0 20px;
+    padding: 32px 24px 32px;
+
     border-right: 1px solid black;
   }
 
   .employment {
-    margin-left: 0;
-    padding-top: 24px;
+    margin: 0;
+    padding: 24px;
   }
 
   .resume-container {
-    border: none;
-
+    /* border: none; */
+    max-width: 100%;
   }
 
   .resume {
-    /* padding: 20px; */
+    /* padding: 32px; */
+    /* width: 100%; */
   }
 }

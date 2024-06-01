@@ -1,3 +1,5 @@
+background repeating - ugly
+
 background not working on iPhone - it's either not there or it's blended weirdly
 
 fonts vary wildly across devices and browsers
