@@ -1,9 +1,4 @@
 /* The ... */
-.intro {
-  /* padding: 12px 0 32px 0; */
-  /* padding: 12px; */
-}
-
 .all-projects {
   width: 100%;
 
@@ -16,9 +11,7 @@
 .project {
   padding: 32px 0 32px;
 
-  /* Check this: */
   width: 100%;
-  /* border-top: 1px solid black; */
 
   display: flex;
   flex-direction: column;
@@ -76,18 +69,15 @@
   padding: 32px 20px;
 
   width: 100%;
-  /* border-bottom: 1px solid black; */
 
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
 #blog-link {
   padding: 12px;
 
-  /* text-decoration: none; */
   width: fit-content;
 
   display: flex;
@@ -95,18 +85,9 @@
   align-items: center;
 }
 
-/* #blog-link:hover .fa-solid {
-  color: gray;
-} */
-
-/* #blog-link:hover #to-underline {
-  text-decoration: underline;
-} */
-
 .blog-portal ul {
   list-style-type: none;
   font-size: 16px;
-
   text-align: center;
 }
 
@@ -118,7 +99,6 @@
 
 .blog-portal ul li a:hover {
   text-decoration: underline;
-  /* font-weight: bold; */
 }
 
 .fa-solid {
@@ -131,10 +111,6 @@
 @media screen and (min-width: 576px) {
   .intro {
     padding: 12px 12px 32px;
-  }
-
-  .all-projects {
-    /* max-width: 500px; */
   }
 
   #maths,
@@ -173,18 +149,13 @@
 
   .intro p {
     text-align: center;
-
   }
 
   .all-projects {
-    /* margin: 0 24px 0; */
-    /* padding: 0 24px 0; */
-
     max-width: 100%;
 
     flex-direction: row;
     flex-wrap: wrap;
-    /* Check if this should only go in desktop: */
     gap: 12px;
     justify-content: space-evenly;
   }
@@ -201,22 +172,5 @@
   .project {
     width: 100%;
     max-width: 300px;
-    /* border: none; */
   }
-
-  .blog-portal {
-    /* border: none; */
-  }
-
-  .blog-portal ul {
-    /* font-size: 20px; */
-  }
-
-  /* #blog-link {
-    margin: 24px;
-    padding: 24px 48px;
-
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-  } */
 }

@@ -1,7 +1,3 @@
-/*  */
-/* !fix distance between h1 and navbar for all pages across all screen sizes */
-/*  */
-
 .intro {
   padding: 24px;
 
@@ -36,10 +32,8 @@ h1 {
 
 /* The ...  */
 .blog {
-  /* margin: 0 32px 32px 32px; */
   margin: 0 12px 0;
   padding: 0 12px 0;
-  /* padding: 24px 32px 32px 32px; */
 
   text-align: center;
   width: 100%;
@@ -60,7 +54,6 @@ h1 {
 .blog p {
   padding: 12px 0 12px;
 
-  /* text-align: center; */
   font-size: 16px;
 }
 
@@ -98,15 +91,7 @@ h1 {
   }
 
   h1 {
-    /* padding-left: 0; */
-
     text-align: left;
-  }
-
-  .intro ul {
-    /* padding: 0; */
-
-    /* text-align: left; */
   }
 
   .blog {
