@@ -1,3 +1,4 @@
+/* The ... section which uses the "intro" styling   */
 .intro {
   padding: 24px;
 
@@ -18,6 +19,7 @@ h1 {
   padding: 2px;
 }
 
+/* The secret ... */
 #secret {
   margin: 0;
   padding: 12px 0 0;

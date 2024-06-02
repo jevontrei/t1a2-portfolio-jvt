@@ -3,6 +3,7 @@
   padding: 12px;
 }
 
+/* The academic and employment experiences are wrapped in this container */
 .experiences-both {
   width: 100%;
 
@@ -58,6 +59,7 @@ h2 {
   margin-top: 0;
 }
 
+/* The resume ... */
 .resume-container {
   width: fit-content;
 
