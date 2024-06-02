@@ -110,9 +110,6 @@
   text-align: center;
 }
 
-.blog-portal ul li {
-}
-
 .blog-portal ul li a {
   padding: 2px;
 
@@ -128,10 +125,6 @@
   padding: 0 12px 12px;
 
   font-size: 32px;
-}
-
-@keyframes {
-  /*  */
 }
 
 /* Media breakpoint for tablets */
@@ -176,6 +169,11 @@
 @media screen and (min-width: 992px) {
   .intro {
     padding: 12px;
+  }
+
+  .intro p {
+    text-align: center;
+
   }
 
   .all-projects {

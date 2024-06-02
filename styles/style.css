@@ -164,11 +164,9 @@ footer {
 
   nav a {
     margin-bottom: 24px;
-    
+
     font-size: 20px;
   }
-
-  
 
   h1 {
     margin: 12px 0 0;
@@ -185,6 +183,10 @@ footer {
 
 /* Media breakpoint for desktops */
 @media screen and (min-width: 992px) {
+  body {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
   header {
     padding: 12px;
     width: 100%;
